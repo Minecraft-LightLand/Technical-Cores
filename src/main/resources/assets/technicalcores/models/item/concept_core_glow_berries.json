@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "technicalcores:item/concept_core_glow_berries"
+    }
+}
+

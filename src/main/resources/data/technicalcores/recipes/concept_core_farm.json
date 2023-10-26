@@ -1,0 +1,37 @@
+{
+  "type": "vanillamagic:crystal_default",
+  "result": {
+    "item": "vanillamagic:concept_core_farm",
+    "count": 1
+  },
+  "pattern": [
+    "AABAA",
+    "AACAA",
+    "DCECF",
+    "AACAA",
+    "AAGAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:dirt"
+    },
+    "B": {
+      "item": "vanillamagic:concept_core_villager_spawn"
+    },
+    "C": {
+      "item": "minecraft:composter"
+    },
+    "D": {
+      "item": "minecraft:wooden_hoe"
+    },
+    "E": {
+      "item": "minecraft:water_bucket"
+    },
+    "F": {
+      "item": "minecraft:hopper_minecart"
+    },
+    "G": {
+      "item": "vanillamagic:world_interaction_io"
+    }
+  }
+}

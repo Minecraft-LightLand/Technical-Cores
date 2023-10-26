@@ -1,0 +1,39 @@
+{
+  "type": "vanillamagic:crystal_default",
+  "result": {
+    "item": "vanillamagic:concept_core_tnt",
+    "count": 1
+  },
+  "pattern": [
+    "ABC ",
+    "DBBE",
+    " F G",
+    "   H"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:sticky_piston"
+    },
+    "B": {
+      "item": "minecraft:slime_block"
+    },
+    "C": {
+      "item": "minecraft:minecart"
+    },
+    "D": {
+      "item": "vanillamagic:core_modifier_pulse_controllable"
+    },
+    "E": {
+      "item": "minecraft:cobblestone_wall"
+    },
+    "F": {
+      "item": "minecraft:dead_brain_coral_fan"
+    },
+    "G": {
+      "item": "minecraft:tnt"
+    },
+    "H": {
+      "item": "vanillamagic:world_interaction_io"
+    }
+  }
+}

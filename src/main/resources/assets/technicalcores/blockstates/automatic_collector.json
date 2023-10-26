@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "": {
+            "model": "technicalcores:block/automatic_collector"
+        }
+    }
+}
+
