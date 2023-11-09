@@ -1,8 +1,8 @@
 package cn.nulladev.technicalcores.item;
 
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCore;
+import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
+import cn.nulladev.technicalcores.item.technicalcore.IWandInteraction;
 import net.minecraft.ChatFormatting;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.util.Mth;
@@ -17,89 +17,64 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
-public class WorldInteractionWand extends Item {
-
-    private static final String TAG_CORE = "core";
+public class WorldInteractionWand extends Item implements ICooldownItem, IContentedItem {
 
     public WorldInteractionWand(Properties props) {
         super(props.stacksTo(1));
     }
 
-    public static void setCore(ItemStack stack, ItemStack core) {
-        CompoundTag tag = new CompoundTag();
-        core.save(tag);
-        stack.getOrCreateTag().put(TAG_CORE, tag);
-    }
-
-    public static ItemStack getCore(ItemStack stack) {
-        if (stack.getOrCreateTag().contains(TAG_CORE)) {
-            return ItemStack.of(stack.getOrCreateTag().getCompound(TAG_CORE));
-        } else {
-            return ItemStack.EMPTY;
+    @Override
+    public int getTotalCooldown(ItemStack stack) {
+        if (IContentedItem.hasContent(stack)) {
+            ItemStack content = IContentedItem.readTagContent(stack);
+            if (content.getItem() instanceof BaseCore core) {
+                return core.getTotalCooldown(content);
+            }
         }
+        return -1;
     }
 
-    public static boolean hasCore(ItemStack stack) {
-        return !getCore(stack).isEmpty();
+    public int getCoreCooldown(ItemStack stack) {
+        if (IContentedItem.hasContent(stack)) {
+            ItemStack content = IContentedItem.readTagContent(stack);
+            return ICooldownItem.readTagCooldown(content);
+        }
+        return -1;
     }
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slot, boolean selected) {
-        if (getCD(stack) > 0) {
-            setCD(stack, getCD(stack) - 1);
+        if (this.getCoreCooldown(stack) > 0) {
+            ItemStack content = IContentedItem.readTagContent(stack);
+            ICooldownItem.writeTagCooldown(content, ICooldownItem.readTagCooldown(stack) - 1);
         }
-    }
-
-    private static int getCD(ItemStack stack) {
-        ItemStack core = getCore(stack);
-        if (!core.isEmpty())
-            return ConceptCore.getCD(core);
-        else
-            return 0;
-    }
-
-    private static void setCD(ItemStack stack, int cd) {
-        ItemStack core = getCore(stack);
-        if (!core.isEmpty())
-            ConceptCore.setCD(core, cd);
-    }
-
-    private static int getMaxCD(ItemStack stack) {
-        ItemStack core = getCore(stack);
-        if (core.getItem() instanceof ConceptCore)
-            return ((ConceptCore) core.getItem()).UsingCD;
-        else
-            return 0;
     }
 
     @Override
     public boolean isBarVisible(ItemStack stack) {
-        return getCD(stack) > 0;
+        return getTotalCooldown(stack) > 0 && getCoreCooldown(stack) > 0;
     }
 
     @Override
     public int getBarWidth(ItemStack stack) {
-        if (getMaxCD(stack) == 0)
-            return 0;
-        return Math.round(13F - 13F * getCD(stack) / getMaxCD(stack));
+        return Math.round(13F - 13F * getCoreCooldown(stack) / getTotalCooldown(stack));
     }
 
     @Override
     public int getBarColor(ItemStack stack) {
-        if (getMaxCD(stack) == 0)
-            return 0;
-        float f = Math.max(0.0F, (getMaxCD(stack) - getCD(stack)) / (float) getMaxCD(stack));
+        float f = Math.max(0.0F, 1F * (getTotalCooldown(stack) - getCoreCooldown(stack)) / getTotalCooldown(stack));
         return Mth.hsvToRgb(f / 3.0F, 1.0F, 1.0F);
     }
 
     @Override
     public Component getName(ItemStack stack) {
-        if (hasCore(stack)) {
+        if (IContentedItem.hasContent(stack)) {
             MutableComponent component = super.getName(stack).plainCopy();
             component.append("(");
-            component.append(getCore(stack).getDisplayName().plainCopy().withStyle(ChatFormatting.GREEN));
+            component.append(IContentedItem.readTagContent(stack).getDisplayName().plainCopy().withStyle(ChatFormatting.GREEN));
             component.append(")");
             return component;
         } else {
@@ -109,43 +84,67 @@ public class WorldInteractionWand extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext ctx) {
-        if (getCD(ctx.getItemInHand()) > 0 && ctx.getPlayer() != null && !ctx.getPlayer().isCreative())
+        ItemStack wand = ctx.getItemInHand();
+        if (!IContentedItem.hasContent(wand)) {
             return InteractionResult.PASS;
-
-        if (getCore(ctx.getItemInHand()).getItem() instanceof ConceptCore item) {
-            InteractionResult result = item.wandUseOn(ctx);
-            if (result != InteractionResult.PASS)
-                setCD(ctx.getItemInHand(), item.UsingCD);
-            return result;
         }
+
+        ItemStack content = IContentedItem.readTagContent(wand);
+        if (content.getItem() instanceof BaseCore core) {
+            if (!core.hasInteraction(content)) {
+                return InteractionResult.PASS;
+            }
+
+            if (ICooldownItem.readTagCooldown(content) > 0 && ctx.getPlayer() != null && !ctx.getPlayer().isCreative()) {
+                return InteractionResult.PASS;
+            }
+
+            if (core instanceof IWandInteraction wi) {
+                InteractionResult result = wi.wandUseOn(ctx);
+                if (result != InteractionResult.PASS)
+                    ICooldownItem.writeTagCooldown(content, core.totalCooldown);
+                return result;
+            }
+        }
+
         return InteractionResult.PASS;
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        ItemStack stack = player.getItemInHand(hand);
-        if (getCD(stack) > 0 && !player.isCreative())
-            return InteractionResultHolder.pass(stack);
+        ItemStack wand = player.getItemInHand(hand);
+        if (!IContentedItem.hasContent(wand)) {
+            return InteractionResultHolder.pass(wand);
+        }
 
-        if (getCore(stack).getItem() instanceof ConceptCore item) {
-            InteractionResultHolder<ItemStack> result = item.wandUse(level, player, hand);
-            if (result.getResult() != InteractionResult.PASS) {
-                setCD(player.getItemInHand(hand), item.UsingCD);
-                return InteractionResultHolder.success(stack);
+        ItemStack content = IContentedItem.readTagContent(wand);
+        if (content.getItem() instanceof BaseCore core) {
+            if (!core.hasInteraction(content)) {
+                return InteractionResultHolder.pass(wand);
+            }
+
+            if (ICooldownItem.readTagCooldown(content) > 0 && !player.isCreative()) {
+                return InteractionResultHolder.pass(wand);
+            }
+
+            if (core instanceof IWandInteraction wi) {
+                InteractionResultHolder<ItemStack> result = wi.wandUse(level, player, hand);
+                if (result.getResult() != InteractionResult.PASS)
+                    ICooldownItem.writeTagCooldown(content, core.totalCooldown);
+                return result;
             }
         }
-        return InteractionResultHolder.pass(stack);
+        return InteractionResultHolder.pass(wand);
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, Level level, List<Component> list, TooltipFlag flags) {
-        Component cd_info;
-        if (!hasCore(stack))
-            cd_info = Component.translatable("vanillamagic.misc.miss_core").withStyle(ChatFormatting.RED);
-        else if (getCD(stack) > 0)
-            cd_info = Component.translatable("vanillamagic.misc.cd2", getCD(stack)).withStyle(ChatFormatting.RED);
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag flags) {
+        if (!IContentedItem.hasContent(stack))
+            list.add(Component.translatable("technicalcores.misc.miss_core").withStyle(ChatFormatting.RED));
+        else if (getCoreCooldown(stack) > 0)
+            list.add(Component.translatable("technicalcores.misc.cd2", getCoreCooldown(stack)).withStyle(ChatFormatting.RED));
         else
-            cd_info = Component.translatable("vanillamagic.misc.cd1").withStyle(ChatFormatting.GREEN);
-        list.add(cd_info);
+            list.add(Component.translatable("technicalcores.misc.cd1").withStyle(ChatFormatting.GREEN));
     }
+
 }

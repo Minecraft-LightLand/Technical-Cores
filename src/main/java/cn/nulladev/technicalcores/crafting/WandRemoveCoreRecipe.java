@@ -1,5 +1,6 @@
 package cn.nulladev.technicalcores.crafting;
 
+import cn.nulladev.technicalcores.item.IContentedItem;
 import cn.nulladev.technicalcores.item.WorldInteractionWand;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
@@ -27,7 +28,7 @@ public class WandRemoveCoreRecipe extends CustomRecipe {
         for (int i = 0; i < inv.getMaxStackSize(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof WorldInteractionWand && WorldInteractionWand.hasCore(stack)) {
+                if (stack.getItem() instanceof WorldInteractionWand && IContentedItem.hasContent(stack)) {
                     if (foundWand)
                         return false;
                     else
@@ -53,7 +54,7 @@ public class WandRemoveCoreRecipe extends CustomRecipe {
         }
         ItemStack wand_empty = wand.copy();
         wand_empty.setCount(1);
-        WorldInteractionWand.setCore(wand_empty, ItemStack.EMPTY);
+        IContentedItem.removeContent(wand_empty);
 
         return wand_empty;
     }
@@ -64,7 +65,7 @@ public class WandRemoveCoreRecipe extends CustomRecipe {
         for (int i = 0; i < ret.size(); i++) {
             ItemStack stack = inv.getItem(i);
             if (stack.getItem() instanceof WorldInteractionWand) {
-                ret.set(i, WorldInteractionWand.getCore(stack));
+                ret.set(i, IContentedItem.readTagContent(stack));
             }
         }
         return ret;

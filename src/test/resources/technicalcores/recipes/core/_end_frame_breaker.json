@@ -1,0 +1,29 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_end_frame_breaker",
+    "count": 1
+  },
+  "pattern": [
+    "A  ",
+    " BC",
+    "DE "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "minecraft:red_mushroom"
+    },
+    "C": {
+      "item": "minecraft:composter"
+    },
+    "D": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "E": {
+      "item": "minecraft:podzol"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_cactus_farm",
+    "count": 1
+  },
+  "pattern": [
+    " A  ",
+    "B B ",
+    "C C ",
+    "D  E"
+  ],
+  "key": {
+    "A": {
+      "tag": "minecraft:fences"
+    },
+    "B": {
+      "item": "minecraft:cactus"
+    },
+    "C": {
+      "item": "minecraft:sand"
+    },
+    "D": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "E": {
+      "item": "minecraft:water_bucket"
+    }
+  }
+}

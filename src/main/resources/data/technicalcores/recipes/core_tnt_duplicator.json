@@ -1,0 +1,33 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_tnt_duplicator",
+    "count": 1
+  },
+  "pattern": [
+    "ABC ",
+    "DECD",
+    "CC  ",
+    " F  "
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:modifier_redstone_pulse_controllable"
+    },
+    "B": {
+      "item": "minecraft:note_block"
+    },
+    "C": {
+      "item": "minecraft:observer"
+    },
+    "D": {
+      "item": "minecraft:piston"
+    },
+    "E": {
+      "item": "minecraft:tnt"
+    },
+    "F": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

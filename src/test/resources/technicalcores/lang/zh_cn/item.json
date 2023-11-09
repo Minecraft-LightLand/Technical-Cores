@@ -34,24 +34,25 @@
                 }
             ]
         },
-        "core_modifier": {
+        "modifier": {
             "-path": [
                 "item.technicalcores"
             ],
             "list": [
                 {
-                    "core_modifier":"核心修饰:"
+                    "modifier":"修饰:"
                 },
                 {
                     "dark_box": "暗箱",
+                    "end_update": "末地更新",
                     "endermite": "末影螨",
-                    "fall": "坠落",
+                    "falling": "坠落",
+                    "nether_portal": "下界传送门",
                     "piston_worm": "活塞虫",
-                    "pulse": "脉冲",
-                    "pulse_controllable": "可控脉冲",
+                    "redstone_pulse": "红石脉冲",
+                    "redstone_pulse_controllable": "可控脉冲",
                     "shulker": "潜影贝",
                     "snow_golem": "雪傀儡",
-                    "update_end": "末地更新",
                     "villager": "村民",
                     "wither": "凋灵"
                 }
@@ -63,42 +64,40 @@
             ],
             "list": [
                 {
-                    "concept_core":"概念核心:"
+                    "core":"核心:"
                 },
                 {
-                    "attachment_block": "附着方块",
-                    "bone_meal": "骨粉",
-                    "bone_meal_advanced": "骨粉(高级)",
-                    "cactus": "仙人掌",
-                    "chicken": "鸡",
-                    "chicken_roast": "烤鸡",
-                    "cobblestone": "圆石",
-                    "cobblestone_advanced": "圆石(高级)",
+                    "azalea_tree_factory": "杜鹃树场",
+                    "bedrock_breaker": "\"铁头功\"",
+                    "bone_meal_farm": "骨粉机",
+                    "cactus_farm": "仙人掌农场",
+                    "carpet_rail_duplicator": "地毯/铁轨复制机",
+                    "chicken_farm": "养鸡场",
+                    "cobblestone_generator": "造石机(圆石)",
+                    "cobblestone_generator_automated": "自动造石机(圆石)",
+                    "cooked_chicken_farm": "烤鸡厂",
                     "drain": "排水",
-                    "ender_pearl": "末影珍珠",
-                    "falling_block": "重力方块",
+                    "enderman_farm": "末影人农场",
                     "farm": "农场",
-                    "frame_destroy": "框架破坏",
-                    "ghast": "恶魂",
-                    "glow_berries": "发光浆果",
-                    "gold": "金",
-                    "iron": "铁",
-                    "lava": "岩浆",
-                    "level_eater": "世界吞噬者",
-                    "melon": "瓜",
+                    "end_frame_breaker": "传送门框架破坏器",
+                    "ghast_farm": "恶魂农场",
+                    "hoglin_farm": "疣猪兽农场",
+                    "infinite_water": "无限水",
+                    "iron_golem_farm": "刷铁机",
+                    "lava_farm": "岩浆农场",
+                    "melon_farm": "瓜农场",
                     "mob_grinder": "刷怪塔",
-                    "nether_portal": "下界传送门",
-                    "obsidian": "黑曜石",
-                    "obsidian_advanced": "黑曜石(高级)",
-                    "porkchop": "猪排",
-                    "shulker_shell": "潜影壳",
-                    "snowball": "雪球",
-                    "stone": "石",
-                    "sugar_cane": "甘蔗",
-                    "tnt": "TNT",
-                    "tree": "树",
-                    "villager_spawn": "村民生成",
-                    "water": "水"
+                    "obsidian_generator": "造石机(黑曜石)",
+                    "obsidian_generator_automated": "自动造石机(黑曜石)",
+                    "sand_duplicator": "刷沙机",
+                    "shulker_farm": "潜影贝农场",
+                    "snowball_farm": "雪球机",
+                    "stone_generator": "造石机(石头)",
+                    "string_duplicator": "刷线机",
+                    "tnt_duplicator": "TNT复制机",
+                    "villager_breeder": "村民繁殖机",
+                    "world_eater": "世界吞噬者",
+                    "zombified_piglin_farm": "僵尸猪灵农场"
                 }
             ]
         }

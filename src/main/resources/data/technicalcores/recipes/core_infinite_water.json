@@ -1,0 +1,23 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_infinite_water",
+    "count": 1
+  },
+  "pattern": [
+    "   ",
+    "ABC",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:water_bucket"
+    },
+    "B": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "C": {
+      "item": "minecraft:water_bucket"
+    }
+  }
+}

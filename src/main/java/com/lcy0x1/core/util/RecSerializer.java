@@ -36,4 +36,8 @@ public class RecSerializer<R extends Recipe<I>, I extends Container> implements 
         Serializer.to(buf, recipe);
     }
 
+    public R blank() {
+        return ExceptionHandler.get(() -> cls.getConstructor(ResourceLocation.class).newInstance(new ResourceLocation("dummy")));
+    }
+
 }

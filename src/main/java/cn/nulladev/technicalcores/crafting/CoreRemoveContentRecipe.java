@@ -1,6 +1,7 @@
 package cn.nulladev.technicalcores.crafting;
 
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCoreWithContent;
+import cn.nulladev.technicalcores.item.IContentedItem;
+import cn.nulladev.technicalcores.item.technicalcore.ContentedCore;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.CraftingContainer;
@@ -27,7 +28,7 @@ public class CoreRemoveContentRecipe extends CustomRecipe {
         for (int i = 0; i < inv.getMaxStackSize(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof ConceptCoreWithContent && ConceptCoreWithContent.hasContent(stack)) {
+                if (stack.getItem() instanceof ContentedCore && IContentedItem.hasContent(stack)) {
                     if (foundCore)
                         return false;
                     else
@@ -46,14 +47,14 @@ public class CoreRemoveContentRecipe extends CustomRecipe {
         for (int i = 0; i < inv.getMaxStackSize(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof ConceptCoreWithContent) {
+                if (stack.getItem() instanceof ContentedCore) {
                     core = stack;
                 }
             }
         }
         ItemStack core_empty = core.copy();
         core_empty.setCount(1);
-        ConceptCoreWithContent.setContent(core_empty, ItemStack.EMPTY);
+        IContentedItem.writeTagContent(core_empty, ItemStack.EMPTY);
 
         return core_empty;
     }
@@ -63,8 +64,8 @@ public class CoreRemoveContentRecipe extends CustomRecipe {
         NonNullList<ItemStack> ret = NonNullList.withSize(inv.getContainerSize(), ItemStack.EMPTY);
         for (int i = 0; i < ret.size(); i++) {
             ItemStack stack = inv.getItem(i);
-            if (stack.getItem() instanceof ConceptCoreWithContent) {
-                ret.set(i, ConceptCoreWithContent.getContent(stack));
+            if (stack.getItem() instanceof ContentedCore) {
+                ret.set(i, IContentedItem.readTagContent(stack));
             }
         }
         return ret;

@@ -22,7 +22,7 @@ import java.util.Map;
 public class GUIGenerator {
 
     public static void main(String[] args) throws Exception {
-        new GUIGenerator("technicalmagic").gen();
+        new GUIGenerator("technicalcores").gen();
     }
 
     private class Comp {

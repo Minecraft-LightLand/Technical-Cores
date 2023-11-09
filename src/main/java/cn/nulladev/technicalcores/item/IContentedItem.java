@@ -40,8 +40,8 @@ public interface IContentedItem {
     }
 
     static Block getBlock(ItemStack stack) {
-        if (readTagContent(stack).getItem() instanceof BlockItem) {
-            return ((BlockItem) (readTagContent(stack).getItem())).getBlock();
+        if (readTagContent(stack).getItem() instanceof BlockItem blockItem) {
+            return blockItem.getBlock();
         } else {
             return Blocks.AIR;
         }

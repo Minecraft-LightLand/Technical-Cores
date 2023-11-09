@@ -1,0 +1,36 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_sand_duplicator",
+    "count": 1
+  },
+  "pattern": [
+    "A   ",
+    "B   ",
+    "C DE",
+    " FG "
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:core_tnt_duplicator"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "tag": "minecraft:trapdoors"
+    },
+    "D": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "E": {
+      "item": "technicalcores:core_bedrock_breaker"
+    },
+    "F": {
+      "item": "technicalcores:modifier_redstone_pulse_controllable"
+    },
+    "G": {
+      "item": "minecraft:piston"
+    }
+  }
+}

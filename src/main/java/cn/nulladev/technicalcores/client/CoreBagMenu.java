@@ -3,7 +3,7 @@ package cn.nulladev.technicalcores.client;
 import cn.nulladev.technicalcores.core.TCRegistry;
 import cn.nulladev.technicalcores.core.TechnicalCores;
 import cn.nulladev.technicalcores.item.CoreStorageBag;
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCore;
+import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
 import com.lcy0x1.base.menu.BaseContainerMenu;
 import com.lcy0x1.core.util.SpriteManager;
 import net.minecraft.nbt.CompoundTag;
@@ -28,7 +28,7 @@ public class CoreBagMenu extends BaseContainerMenu<CoreBagMenu> {
 
         @Override
         public boolean canPlaceItem(int index, ItemStack stack) {
-            return stack.getItem() instanceof ConceptCore;
+            return stack.getItem() instanceof BaseCore;
         }
     }
 
@@ -46,7 +46,7 @@ public class CoreBagMenu extends BaseContainerMenu<CoreBagMenu> {
         super(TCRegistry.MT_CORE_BAG.get(), windowId, inventory, CORE_BAG, menu -> new CoreBagContainer(menu, bag), false);
         this.player = inventory.player;
         this.bag = bag;
-        this.addSlot("grid", stack -> stack.getItem() instanceof ConceptCore);
+        this.addSlot("grid", stack -> stack.getItem() instanceof BaseCore);
         if (!this.player.level.isClientSide()) {
             ListTag tag = CoreStorageBag.getListTag(bag);
             for (int i = 0; i < tag.size(); i++) {

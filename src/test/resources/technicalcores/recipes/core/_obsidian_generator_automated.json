@@ -1,0 +1,55 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_obsidian_generator_automated",
+    "count": 1
+  },
+  "pattern": [
+    "A  BC",
+    "   DE",
+    " FG H",
+    "IJK  ",
+    "  LM "
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:modifier_end_update"
+    },
+    "B": {
+      "item": "minecraft:grindstone"
+    },
+    "C": {
+      "item": "technicalcores:core_snowball_farm"
+    },
+    "D": {
+      "item": "technicalcores:modifier_wither"
+    },
+    "E": {
+      "item": "minecraft:dispenser"
+    },
+    "F": {
+      "item": "minecraft:water_bucket"
+    },
+    "G": {
+      "item": "technicalcores:core_cobblestone_generator"
+    },
+    "H": {
+      "item": "technicalcores:modifier_redstone_pulse_controllable"
+    },
+    "I": {
+      "item": "technicalcores:modifier_snow_golem"
+    },
+    "J": {
+      "item": "minecraft:soul_sand"
+    },
+    "K": {
+      "item": "minecraft:piston"
+    },
+    "L": {
+      "item": "technicalcores:modifier_redstone_pulse"
+    },
+    "M": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

@@ -34,13 +34,13 @@
                 }
             ]
         },
-        "core_modifier": {
+        "modifier": {
             "-path": [
                 "item.technicalcores"
             ],
             "list": [
                 {
-                    "core_modifier":"Core Modifier: "
+                    "core_modifier":"Modifier: "
                 },
                 {
                     "dark_box": "Dark Box",

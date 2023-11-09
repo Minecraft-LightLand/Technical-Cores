@@ -1,0 +1,32 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:modifier_end_update",
+    "count": 1
+  },
+  "pattern": [
+    "AB ",
+    "CD ",
+    " EF"
+  ],
+  "key": {
+    "A": {
+      "tag": "minecraft:carpets"
+    },
+    "B": {
+      "item": "technicalcores:core_carpet_rail_duplicator"
+    },
+    "C": {
+      "item": "technicalcores:modifier_redstone_pulse"
+    },
+    "D": {
+      "item": "minecraft:dropper"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "F": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

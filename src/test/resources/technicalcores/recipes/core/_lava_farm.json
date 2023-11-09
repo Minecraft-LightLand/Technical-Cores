@@ -1,0 +1,30 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_lava_farm",
+    "count": 1
+  },
+  "pattern": [
+    "A A ",
+    "B B ",
+    "C C ",
+    " D E"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:lava_bucket"
+    },
+    "B": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "C": {
+      "item": "minecraft:cauldron"
+    },
+    "D": {
+      "item": "minecraft:bucket"
+    },
+    "E": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

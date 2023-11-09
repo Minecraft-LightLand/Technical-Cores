@@ -1,0 +1,21 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:modifier_dark_box",
+    "count": 1
+  },
+  "pattern": [
+    "AAAA",
+    "A  A",
+    "A BA",
+    "AAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:cobblestone"
+    },
+    "B": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

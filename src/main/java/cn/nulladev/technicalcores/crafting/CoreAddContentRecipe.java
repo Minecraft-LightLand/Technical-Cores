@@ -1,6 +1,7 @@
 package cn.nulladev.technicalcores.crafting;
 
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCoreWithContent;
+import cn.nulladev.technicalcores.item.IContentedItem;
+import cn.nulladev.technicalcores.item.technicalcore.ContentedCore;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.ItemStack;
@@ -19,16 +20,16 @@ public class CoreAddContentRecipe extends CustomRecipe {
 
     @Override
     public boolean matches(CraftingContainer inv, Level level) {
-        ConceptCoreWithContent core = null;
+        ContentedCore core = null;
         int coreIndex = -1;
         for (int i = 0; i < inv.getMaxStackSize(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof ConceptCoreWithContent && !ConceptCoreWithContent.hasContent(stack)) {
+                if (stack.getItem() instanceof ContentedCore && !IContentedItem.hasContent(stack)) {
                     if (core != null) {
                         return false;
                     } else {
-                        core = (ConceptCoreWithContent) stack.getItem();
+                        core = (ContentedCore) stack.getItem();
                         coreIndex = i;
                     }
                 }
@@ -62,7 +63,7 @@ public class CoreAddContentRecipe extends CustomRecipe {
         for (int i = 0; i < inv.getMaxStackSize(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof ConceptCoreWithContent) {
+                if (stack.getItem() instanceof ContentedCore) {
                     core = stack;
                 } else {
                     content = stack;
@@ -77,7 +78,7 @@ public class CoreAddContentRecipe extends CustomRecipe {
         ItemStack core_with_content = core.copy();
         ItemStack content_size_1 = content.copy();
         content_size_1.setCount(1);
-        ConceptCoreWithContent.setContent(core_with_content, content_size_1);
+        IContentedItem.writeTagContent(core_with_content, content_size_1);
 
         return core_with_content;
     }

@@ -1,0 +1,33 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_bedrock_breaker",
+    "count": 1
+  },
+  "pattern": [
+    " A  ",
+    "BC  ",
+    "DCB ",
+    "E  F"
+  ],
+  "key": {
+    "A": {
+      "tag": "minecraft:trapdoors"
+    },
+    "B": {
+      "item": "minecraft:tnt"
+    },
+    "C": {
+      "item": "minecraft:obsidian"
+    },
+    "D": {
+      "item": "minecraft:piston"
+    },
+    "E": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "F": {
+      "item": "technicalcores:core_tnt_duplicator"
+    }
+  }
+}

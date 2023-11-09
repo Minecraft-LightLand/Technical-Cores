@@ -1,8 +1,11 @@
 package cn.nulladev.technicalcores.block;
 
 import cn.nulladev.technicalcores.client.CollectorMenu;
+import cn.nulladev.technicalcores.core.TCRecipes;
 import cn.nulladev.technicalcores.core.TCRegistry;
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCore;
+import cn.nulladev.technicalcores.item.IContentedItem;
+import cn.nulladev.technicalcores.item.ICooldownItem;
+import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -29,30 +32,38 @@ import java.util.stream.IntStream;
 
 public class CollectorBE extends BaseContainerBlockEntity implements WorldlyContainer {
 
-    public static final String TAG_ITEMS = "Items";
     protected SimpleContainer container = new SimpleContainer(CollectorMenu.SIZE);
+
+    protected static final String TAG_ITEMS = "CollectorItems";
 
     public static BlockEntityTicker<CollectorBE> ticker = (level, pos, state, blockEntity) -> blockEntity.serverTick(level, pos, state, blockEntity);
 
     private void serverTick(Level level, BlockPos pos, BlockState state, CollectorBE be) {
         ItemStack coreStack = be.getItem(0);
-        if (coreStack.getItem() instanceof ConceptCore) {
-            if (ConceptCore.getCD(coreStack) > 0) {
-                ConceptCore.setCD(coreStack, ConceptCore.getCD(coreStack) - 1);
+        if (coreStack.getItem() instanceof ICooldownItem) {
+            if (ICooldownItem.readTagCooldown(coreStack) > 0) {
+                ICooldownItem.writeTagCooldown(coreStack, ICooldownItem.readTagCooldown(coreStack) - 1);
             } else {
-                ConceptCore core = (ConceptCore) coreStack.getItem();
-                if (!core.canProvideItem(coreStack))
-                    return;
-                boolean flag = false;
-                List<ItemStack> list = core.getMachineOutputs(coreStack);
-                if (list.size() == 0)
-                    flag = true;
-                for (ItemStack s : list) {
-                    if (be.addStack(s))
-                        flag = true;
-                }
-                if (flag)
-                    ConceptCore.setCD(coreStack, core.UsingCD);
+                level.getRecipeManager().getRecipeFor(TCRecipes.RT_CORE_OUTPUT.get(), this.container, level).ifPresent(
+                    (recipe) -> {
+                        System.out.println(recipe.input.getItem());
+                        if (coreStack.getItem() == recipe.input.getItem() &&
+                                (IContentedItem.readTagContent(recipe.input).isEmpty() || IContentedItem.readTagContent(coreStack).getItem() == IContentedItem.readTagContent(recipe.input).getItem())) {
+                            for (var entry : recipe.outputs.entrySet()) {
+                                var stack = entry.getKey();
+                                var possibility = entry.getValue();
+                                if (Math.random() * 100 <= possibility) {
+                                    if (container.canAddItem(stack)){
+                                        container.addItem(stack);
+                                    }
+                                }
+                            }
+                            if (coreStack.getItem() instanceof BaseCore core) {
+                                ICooldownItem.writeTagCooldown(coreStack, core.totalCooldown);
+                            }
+                        }
+                    }
+                );
             }
         }
     }
@@ -63,32 +74,6 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
 
     public SimpleContainer getContainer() {
         return this.container;
-    }
-
-    public boolean addStack(ItemStack stack) {
-        if (stack.isEmpty())
-            return false;
-        setChanged();
-        for (int i = 0; i < container.getContainerSize(); i++) {
-            if (container.getItem(i).isEmpty()) {
-                container.setItem(i, stack);
-                return true;
-            } else if (container.getItem(i).sameItem(stack)) {
-                int num = container.getItem(i).getMaxStackSize() - container.getItem(i).getCount();
-                if (num > 0) {
-                    if (stack.getCount() <= num) {
-                        container.getItem(i).grow(stack.getCount());
-                        return true;
-                    } else {
-                        container.getItem(i).grow(num);
-                        stack.shrink(num);
-                        addStack(stack);
-                        return true;
-                    }
-                }
-            }
-        }
-        return false;
     }
 
     @Override
@@ -146,20 +131,19 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
 
     protected void saveAdditional(CompoundTag tag) {
         super.saveAdditional(tag);
-        tag.put("items", container.createTag());
+        tag.put(TAG_ITEMS, container.createTag());
     }
 
     public void load(CompoundTag tag) {
         super.load(tag);
-        if (tag.contains("items")) {
-            container.fromTag((ListTag) tag.get("items"));
+        if (tag.contains("Items")) {
+            container.fromTag(tag.getList(TAG_ITEMS, 10));
         }
 
     }
 
     @Override
     public int[] getSlotsForFace(Direction direc) {
-        //System.out.println(direc);
         if (direc == Direction.UP) {
             return new int[]{0};
         } else {
@@ -174,21 +158,15 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
 
     @Override
     public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direc) {
-        return !(stack.getItem() instanceof ConceptCore);
+        return !(stack.getItem() instanceof BaseCore);
     }
 
     @Override
     public boolean canPlaceItem(int index, ItemStack stack) {
         if (index == 0)
-            return stack.getItem() instanceof ConceptCore;
+            return stack.getItem() instanceof BaseCore;
         else
             return false;
     }
 
-    @Override
-    public <T> LazyOptional<T> getCapability(Capability<T> cap, @Nullable Direction side) {
-        if (cap == ForgeCapabilities.ITEM_HANDLER) {
-            return (LazyOptional<T>) LazyOptional.of(() -> new SidedInvWrapper(this, side));
-        } else return super.getCapability(cap, side);
-    }
 }

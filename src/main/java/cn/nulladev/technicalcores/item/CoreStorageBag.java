@@ -1,7 +1,7 @@
 package cn.nulladev.technicalcores.item;
 
 import cn.nulladev.technicalcores.client.CoreBagMenu;
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCore;
+import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.Tag;
@@ -55,8 +55,8 @@ public class CoreStorageBag extends Item {
         boolean changed = false;
         for (int i = 0; i < Math.min(SIZE, list.size()); i++) {
             ItemStack core = ItemStack.of(list.getCompound(i));
-            if (ConceptCore.getCD(core) > 0) {
-                ConceptCore.setCD(core, ConceptCore.getCD(core) - 1);
+            if (ICooldownItem.readTagCooldown(core) > 0) {
+                ICooldownItem.writeTagCooldown(core, ICooldownItem.readTagCooldown(core) - 1);
                 changed = true;
                 list.set(i, core.save(new CompoundTag()));
             }

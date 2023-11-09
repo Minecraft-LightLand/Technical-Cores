@@ -1,0 +1,33 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_snowball_farm",
+    "count": 1
+  },
+  "pattern": [
+    "AB C",
+    "DDDD",
+    "EEEE",
+    "   F"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:minecart"
+    },
+    "B": {
+      "item": "technicalcores:modifier_snow_golem"
+    },
+    "C": {
+      "item": "technicalcores:core_tnt_duplicator"
+    },
+    "D": {
+      "item": "minecraft:powered_rail"
+    },
+    "E": {
+      "item": "minecraft:obsidian"
+    },
+    "F": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

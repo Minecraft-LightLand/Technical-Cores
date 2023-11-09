@@ -1,0 +1,34 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_enderman_farm",
+    "count": 1
+  },
+  "pattern": [
+    "  A  ",
+    "  B  ",
+    "CCDCC",
+    "  E  ",
+    "  F  "
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:modifier_endermite"
+    },
+    "B": {
+      "item": "minecraft:minecart"
+    },
+    "C": {
+      "item": "minecraft:end_stone"
+    },
+    "D": {
+      "tag": "minecraft:trapdoors"
+    },
+    "E": {
+      "item": "technicalcores:modifier_falling"
+    },
+    "F": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

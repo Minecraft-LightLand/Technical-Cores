@@ -1,0 +1,28 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_world_eater",
+    "count": 1
+  },
+  "pattern": [
+    "  A A",
+    " BCC ",
+    "ACDCA",
+    " CCB ",
+    "A A  "
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:modifier_piston_worm"
+    },
+    "B": {
+      "item": "technicalcores:core_tnt_duplicator"
+    },
+    "C": {
+      "item": "minecraft:slime_block"
+    },
+    "D": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

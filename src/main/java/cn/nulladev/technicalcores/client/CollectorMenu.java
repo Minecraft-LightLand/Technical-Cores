@@ -2,7 +2,7 @@ package cn.nulladev.technicalcores.client;
 
 import cn.nulladev.technicalcores.core.TCRegistry;
 import cn.nulladev.technicalcores.core.TechnicalCores;
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCore;
+import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
 import com.lcy0x1.base.menu.BaseContainerMenu;
 import com.lcy0x1.core.util.SpriteManager;
 import net.minecraft.core.BlockPos;
@@ -17,7 +17,7 @@ public class CollectorMenu extends BaseContainerMenu<CollectorMenu> {
 
     public CollectorMenu(int windowId, Inventory inventory, BlockPos pos, Level level) {
         super(TCRegistry.MT_COLLECTOR.get(), windowId, inventory, CORE_MACHINE, menu -> level.getBlockEntity(pos, TCRegistry.BE_COLLECTOR.get()).get().getContainer(), false);
-        this.addSlot("core", stack -> stack.getItem() instanceof ConceptCore && ((ConceptCore)stack.getItem()).isUsable(stack));
+        this.addSlot("core", stack -> stack.getItem() instanceof BaseCore);
         this.addSlot("grid", stack -> false);
     }
 

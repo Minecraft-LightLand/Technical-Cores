@@ -1,0 +1,26 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_cooked_chicken_farm",
+    "count": 1
+  },
+  "pattern": [
+    "ABA",
+    " C ",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:core_chicken_farm"
+    },
+    "B": {
+      "item": "minecraft:lava_bucket"
+    },
+    "C": {
+      "tag": "minecraft:slabs"
+    },
+    "D": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_carpet_rail_duplicator",
+    "count": 1
+  },
+  "pattern": [
+    " A ",
+    "BAC",
+    "DAD"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:slime_block"
+    },
+    "B": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "C": {
+      "item": "minecraft:sticky_piston"
+    },
+    "D": {
+      "item": "minecraft:observer"
+    }
+  }
+}

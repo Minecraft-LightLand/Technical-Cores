@@ -1,0 +1,48 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_bone_meal_farm",
+    "count": 1
+  },
+  "pattern": [
+    "ABB ",
+    "CDD ",
+    "EFGH",
+    "EIJK"
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:modifier_redstone_pulse"
+    },
+    "B": {
+      "item": "minecraft:piston"
+    },
+    "C": {
+      "item": "technicalcores:modifier_redstone_pulse_controllable"
+    },
+    "D": {
+      "item": "technicalcores:core_stone_generator"
+    },
+    "E": {
+      "item": "minecraft:dispenser"
+    },
+    "F": {
+      "item": "minecraft:bone_meal"
+    },
+    "G": {
+      "item": "minecraft:moss_block"
+    },
+    "H": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "I": {
+      "item": "minecraft:water_bucket"
+    },
+    "J": {
+      "item": "minecraft:hopper"
+    },
+    "K": {
+      "item": "minecraft:composter"
+    }
+  }
+}

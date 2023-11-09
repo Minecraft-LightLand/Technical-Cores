@@ -1,0 +1,35 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_chicken_farm",
+    "count": 1
+  },
+  "pattern": [
+    "A  ",
+    "BCD",
+    "EFG"
+  ],
+  "key": {
+    "A": {
+      "item": "technicalcores:modifier_redstone_pulse"
+    },
+    "B": {
+      "item": "minecraft:dispenser"
+    },
+    "C": {
+      "item": "minecraft:egg"
+    },
+    "D": {
+      "item": "minecraft:ladder"
+    },
+    "E": {
+      "item": "minecraft:dropper"
+    },
+    "F": {
+      "item": "minecraft:hopper"
+    },
+    "G": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

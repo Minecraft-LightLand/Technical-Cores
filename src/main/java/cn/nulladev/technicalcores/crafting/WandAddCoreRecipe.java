@@ -1,7 +1,8 @@
 package cn.nulladev.technicalcores.crafting;
 
+import cn.nulladev.technicalcores.item.IContentedItem;
 import cn.nulladev.technicalcores.item.WorldInteractionWand;
-import cn.nulladev.technicalcores.item.conceptcore.ConceptCore;
+import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.ItemStack;
@@ -25,12 +26,12 @@ public class WandAddCoreRecipe extends CustomRecipe {
         for (int i = 0; i < inv.getMaxStackSize(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof WorldInteractionWand && !WorldInteractionWand.hasCore(stack)) {
+                if (stack.getItem() instanceof WorldInteractionWand && !IContentedItem.hasContent(stack)) {
                     if (foundWand)
                         return false;
                     else
                         foundWand = true;
-                } else if (stack.getItem() instanceof ConceptCore && ((ConceptCore)stack.getItem()).isUsable(stack)) {
+                } else if (stack.getItem() instanceof BaseCore core && core.hasInteraction(stack)) {
                     if (foundCore)
                         return false;
                     else
@@ -53,7 +54,7 @@ public class WandAddCoreRecipe extends CustomRecipe {
             if (!stack.isEmpty()) {
                 if (stack.getItem() instanceof WorldInteractionWand) {
                     wand = stack;
-                } else if (stack.getItem() instanceof ConceptCore) {
+                } else if (stack.getItem() instanceof BaseCore) {
                     core = stack;
                 }
             }
@@ -64,7 +65,7 @@ public class WandAddCoreRecipe extends CustomRecipe {
         }
 
         ItemStack wand_with_core = wand.copy();
-        WorldInteractionWand.setCore(wand_with_core, core);
+        IContentedItem.writeTagContent(wand_with_core, core);
 
         return wand_with_core;
     }
