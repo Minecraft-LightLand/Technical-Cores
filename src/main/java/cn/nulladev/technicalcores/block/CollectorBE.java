@@ -46,7 +46,6 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
             } else {
                 level.getRecipeManager().getRecipeFor(TCRecipes.RT_CORE_OUTPUT.get(), this.container, level).ifPresent(
                     (recipe) -> {
-                        System.out.println(recipe.input.getItem());
                         if (coreStack.getItem() == recipe.input.getItem() &&
                                 (IContentedItem.readTagContent(recipe.input).isEmpty() || IContentedItem.readTagContent(coreStack).getItem() == IContentedItem.readTagContent(recipe.input).getItem())) {
                             for (var entry : recipe.outputs.entrySet()) {
@@ -65,6 +64,7 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
                     }
                 );
             }
+            this.setChanged();
         }
     }
 
@@ -136,7 +136,7 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
 
     public void load(CompoundTag tag) {
         super.load(tag);
-        if (tag.contains("Items")) {
+        if (tag.contains(TAG_ITEMS)) {
             container.fromTag(tag.getList(TAG_ITEMS, 10));
         }
 
