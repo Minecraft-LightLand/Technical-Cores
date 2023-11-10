@@ -1,0 +1,15 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_sand_duplicator",
+    "nbt": "{tag_tc_content:{Count:1b,id:\"minecraft:chipped_anvil\"}}"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:chipped_anvil"
+      },
+      "_val": 100.0
+    }
+  ]
+}

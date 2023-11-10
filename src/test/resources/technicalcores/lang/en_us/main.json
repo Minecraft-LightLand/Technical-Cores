@@ -32,7 +32,11 @@
         "basic": "Space Crystal: Basic",
         "advanced": "Space Crystal: Advanced",
         "ultimate": "Space Crystal: Ultimate"
-      }
+      },
+      "collector": "Automatic collector"
+    },
+    "tooltip": {
+      "output_prop": "Probability: %.1f%%"
     }
   }
 }

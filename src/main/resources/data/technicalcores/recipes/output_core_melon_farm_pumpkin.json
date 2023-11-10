@@ -1,0 +1,15 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_melon_farm",
+    "nbt": "{tag_tc_content:{Count:1b,id:\"minecraft:pumpkin_seeds\"}}"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:pumpkin"
+      },
+      "_val": 100.0
+    }
+  ]
+}

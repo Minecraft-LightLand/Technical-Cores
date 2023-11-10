@@ -38,10 +38,10 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
             if (ICooldownItem.readTagCooldown(coreStack) > 0) {
                 ICooldownItem.writeTagCooldown(coreStack, ICooldownItem.readTagCooldown(coreStack) - 1);
             } else {
-                level.getRecipeManager().getRecipeFor(TCRecipes.RT_CORE_OUTPUT.get(), this.container, level).ifPresent(
+                level.getRecipeManager().getRecipesFor(TCRecipes.RT_CORE_OUTPUT.get(), this.container, level).forEach(
                     (recipe) -> {
                         if (coreStack.getItem() == recipe.input.getItem() &&
-                                (IContentedItem.readTagContent(recipe.input).isEmpty() || IContentedItem.readTagContent(coreStack).getItem() == IContentedItem.readTagContent(recipe.input).getItem())) {
+                                (IContentedItem.readTagContent(recipe.input).isEmpty() || IContentedItem.readTagContent(coreStack).sameItem(IContentedItem.readTagContent(recipe.input)))) {
                             for (var entry : recipe.outputs.entrySet()) {
                                 var stack = entry.getKey();
                                 var possibility = entry.getValue();

@@ -4,18 +4,18 @@
             "-path": [
                 "item.technicalcores"
             ],
-            "core_amplifier": "Core Amplifier",
-            "core_storage_bag": "Core Storage Bag",
-            "infinite_fuel": "Infinite Fuel",
-            "world_interaction_io": "World Interaction I/O",
-            "world_interaction_wand": "World Interaction Wand"
+            "core_amplifier": "Core amplifier",
+            "core_storage_bag": "Core storage bag",
+            "infinite_fuel": "Infinite fuel",
+            "world_interaction_io": "World interaction I/O",
+            "world_interaction_wand": "World interaction Wand"
         },
         "block": {
             "-path": [
                 "item.technicalcores",
                 "block.technicalcores"
             ],
-            "automatic_collector": "Automatic Collector"
+            "automatic_collector": "Automatic collector"
         }
     },
     "cartesian": {
@@ -25,7 +25,7 @@
             ],
             "list": [
                 {
-                    "space_crystal":"Space Crystal: "
+                    "space_crystal":"Space crystal: "
                 },
                 {
                     "basic": "Basic",
@@ -40,18 +40,19 @@
             ],
             "list": [
                 {
-                    "core_modifier":"Modifier: "
+                    "modifier":"Modifier: "
                 },
                 {
-                    "dark_box": "Dark Box",
+                    "dark_box": "Dark box",
+                    "end_update": "End update",
                     "endermite": "Endermite",
-                    "fall": "Fall",
-                    "piston_worm": "Piston Worm",
-                    "pulse": "Pulse",
-                    "pulse_controllable": "Controllable Pulse",
+                    "falling": "Falling",
+                    "nether_portal": "Nether portal",
+                    "piston_worm": "Piston worm",
+                    "redstone_pulse": "Redstone pulse",
+                    "redstone_pulse_controllable": "Controllable redstone pulse",
                     "shulker": "Shulker",
-                    "snow_golem": "Snow Golem",
-                    "update_end": "End Update",
+                    "snow_golem": "Snow golem",
                     "villager": "Villager",
                     "wither": "Wither"
                 }
@@ -63,42 +64,40 @@
             ],
             "list": [
                 {
-                    "concept_core":"Concept Core: "
+                    "core":"Core: "
                 },
                 {
-                    "attachment_block": "Attachment Blocks",
-                    "bone_meal": "Bone Meal",
-                    "bone_meal_advanced": "Bone Meal (Advanced)",
-                    "cactus": "Cactus",
-                    "chicken": "Chicken",
-                    "chicken_roast": "Roast Chicken",
-                    "cobblestone": "Cobblestone",
-                    "cobblestone_advanced": "Cobblestone (Advanced)",
+                    "azalea_tree_factory": "Azalea tree factory",
+                    "bedrock_breaker": "Bedrock breaker",
+                    "bone_meal_farm": "Bone meal farm",
+                    "cactus_farm": "Cactus farm",
+                    "carpet_rail_duplicator": "Carpet/rail duplicator",
+                    "chicken_farm": "Chicken farm",
+                    "cobblestone_generator": "Cobblestone generator",
+                    "cobblestone_generator_automated": "Cobblestone generator (automated)",
+                    "cooked_chicken_farm": "Cooked chicken farm",
                     "drain": "Drain",
-                    "ender_pearl": "Ender Pearl",
-                    "falling_block": "Falling Blocks",
-                    "farm": "Farm",
-                    "frame_destroy": "End Portal Frame Destroy",
-                    "ghast": "Ghast",
-                    "glow_berries": "Glow Berries",
-                    "gold": "Gold",
-                    "iron": "Iron",
-                    "lava": "Lava",
-                    "level_eater": "Level Eater",
-                    "melon": "Melons",
-                    "mob_grinder": "Mob Grinder",
-                    "nether_portal": "Nether Portal",
-                    "obsidian": "Obsidian",
-                    "obsidian_advanced": "Obsidian (Advanced)",
-                    "porkchop": "Porkchop",
-                    "shulker_shell": "Shulker Shell",
-                    "snowball": "Snowball",
-                    "stone": "Stone",
-                    "sugar_cane": "Sugar Cane",
-                    "tnt": "TNT",
-                    "tree": "Tree",
-                    "villager_spawn": "Villager Spawn",
-                    "water": "Water"
+                    "enderman_farm": "Enderman farm",
+                    "end_frame_breaker": "End frame breaker",
+                    "ghast_farm": "Ghast farm",
+                    "hoglin_farm": "Hoglin farm",
+                    "infinite_water": "Infinite water",
+                    "iron_golem_farm": "Iron golem farm",
+                    "lava_farm": "Lava farm",
+                    "melon_farm": "Melon farm",
+                    "mob_grinder": "Mob grinder",
+                    "obsidian_generator": "Obsidian generator",
+                    "obsidian_generator_automated": "Obsidian generator (automated)",
+                    "sand_duplicator": "Sand duplicator",
+                    "shulker_farm": "Shulker farm",
+                    "snowball_farm": "Snowball farm",
+                    "stone_generator": "Stone generator",
+                    "string_duplicator": "String duplicator",
+                    "tnt_duplicator": "TNT duplicator",
+                    "villager_breeder": "Villager breeder",
+                    "villager_crop_farm": "Villager crop farm",
+                    "world_eater": "WORLD EATER",
+                    "zombified_piglin_farm": "Zombified piglin farm"
                 }
             ]
         }

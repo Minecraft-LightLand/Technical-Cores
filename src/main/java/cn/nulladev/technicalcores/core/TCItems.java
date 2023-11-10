@@ -79,7 +79,7 @@ public class TCItems {
 
     public static RegistryObject<Item> CORE_BONE_MEAL_FARM = register("core_bone_meal_farm", p -> new BoneMealCore(p, 20));
     public static RegistryObject<Item> CORE_DRAIN = register("core_drain", p -> new DrainCore(p, 200));
-    public static RegistryObject<Item> CORE_MELON_FARM = register("core_melon_farm", p -> new MelonCore(p, 60));
+    public static RegistryObject<Item> CORE_MELON_FARM = register("core_melon_farm", p -> new MelonCore(p, 50));
     public static RegistryObject<Item> CORE_VILLAGER_CROP_FARM = register("core_villager_crop_farm", p -> new VillagerCropFarm(p, 600));
     public static RegistryObject<Item> CORE_WORLD_EATER = register("core_world_eater", p -> new WorldEaterCore(p, 6000));
 

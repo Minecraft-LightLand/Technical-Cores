@@ -1,0 +1,15 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_villager_crop_farm",
+    "nbt": "{tag_tc_content:{Count:1b,id:\"minecraft:wheat_seeds\"}}"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:bread"
+      },
+      "_val": 33.3
+    }
+  ]
+}

@@ -36,7 +36,7 @@
       "collector": "自动收集器"
     },
     "tooltip": {
-      "output_prop": "概率:%.1f%%"
+      "output_prop": "概率: %.1f%%"
     }
   }
 }

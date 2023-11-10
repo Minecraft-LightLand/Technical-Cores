@@ -1,0 +1,15 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_carpet_rail_duplicator",
+    "nbt": "{tag_tc_content:{Count:1b,id:\"minecraft:light_blue_carpet\"}}"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:light_blue_carpet"
+      },
+      "_val": 100.0
+    }
+  ]
+}

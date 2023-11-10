@@ -52,7 +52,13 @@ public class VillagerCropFarm extends ContentedCore implements IWandInteraction 
                 player.getFoodData().eat(1, 0.6F);
                 flag = true;
             }
+        } else if (content == Items.WHEAT_SEEDS) {
+        if (player.canEat(false)) {
+            if (player.getRandom().nextFloat() < 1F/3)
+                player.getFoodData().eat(5, 0.6F);
+            flag = true;
         }
+    }
 
         if (flag) {
             return InteractionResultHolder.success(player.getItemInHand(hand));
