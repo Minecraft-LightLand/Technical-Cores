@@ -1,0 +1,20 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_cooked_chicken_farm"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:cooked_chicken"
+      },
+      "_val": 100.0
+    },
+    {
+      "_key": {
+        "item": "minecraft:feather"
+      },
+      "_val": 100.0
+    }
+  ]
+}

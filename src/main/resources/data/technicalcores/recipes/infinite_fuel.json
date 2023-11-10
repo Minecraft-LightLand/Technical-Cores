@@ -11,7 +11,7 @@
   ],
   "key": {
     "A": {
-      "tag": "minecraft:carpets"
+      "tag": "minecraft:wool_carpets"
     },
     "B": {
       "item": "technicalcores:core_carpet_rail_duplicator"

@@ -1,0 +1,74 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_mob_grinder"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "_val": 100.0
+    },
+    {
+      "_key": {
+        "item": "minecraft:gunpowder"
+      },
+      "_val": 33.7
+    },
+    {
+      "_key": {
+        "item": "minecraft:bone"
+      },
+      "_val": 40.0
+    },
+    {
+      "_key": {
+        "item": "minecraft:arrow"
+      },
+      "_val": 40.0
+    },
+    {
+      "_key": {
+        "item": "minecraft:string"
+      },
+      "_val": 33.3
+    },
+    {
+      "_key": {
+        "item": "minecraft:stick"
+      },
+      "_val": 0.8
+    },
+    {
+      "_key": {
+        "item": "minecraft:sugar"
+      },
+      "_val": 0.4
+    },
+    {
+      "_key": {
+        "item": "minecraft:glass_bottle"
+      },
+      "_val": 0.4
+    },
+    {
+      "_key": {
+        "item": "minecraft:spider_eye"
+      },
+      "_val": 0.4
+    },
+    {
+      "_key": {
+        "item": "minecraft:redstone"
+      },
+      "_val": 0.4
+    },
+    {
+      "_key": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "_val": 0.4
+    }
+  ]
+}

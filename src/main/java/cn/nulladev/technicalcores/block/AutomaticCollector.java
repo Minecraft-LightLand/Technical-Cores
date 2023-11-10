@@ -52,6 +52,7 @@ public class AutomaticCollector extends BaseEntityBlock {
         return InteractionResult.SUCCESS;
     }
 
+    @Override
     public void onRemove(BlockState p_51538_, Level p_51539_, BlockPos p_51540_, BlockState p_51541_, boolean p_51542_) {
         if (!p_51538_.is(p_51541_.getBlock())) {
             BlockEntity blockentity = p_51539_.getBlockEntity(p_51540_);
@@ -63,10 +64,12 @@ public class AutomaticCollector extends BaseEntityBlock {
         }
     }
 
+    @Override
     public boolean hasAnalogOutputSignal(BlockState p_49058_) {
         return true;
     }
 
+    @Override
     public int getAnalogOutputSignal(BlockState p_49065_, Level p_49066_, BlockPos p_49067_) {
         return AbstractContainerMenu.getRedstoneSignalFromBlockEntity(p_49066_.getBlockEntity(p_49067_));
     }

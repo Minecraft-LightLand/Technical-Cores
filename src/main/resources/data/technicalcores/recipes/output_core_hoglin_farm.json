@@ -1,0 +1,20 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_hoglin_farm"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:cooked_porkchop"
+      },
+      "_val": 100.0
+    },
+    {
+      "_key": {
+        "item": "minecraft:leather"
+      },
+      "_val": 16.7
+    }
+  ]
+}

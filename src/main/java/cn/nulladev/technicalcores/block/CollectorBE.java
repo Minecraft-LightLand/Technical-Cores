@@ -9,7 +9,6 @@ import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.ListTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.WorldlyContainer;
@@ -21,13 +20,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
+import javax.annotation.Nullable;
 import java.util.stream.IntStream;
 
 public class CollectorBE extends BaseContainerBlockEntity implements WorldlyContainer {
@@ -152,7 +146,7 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
     }
 
     @Override
-    public boolean canPlaceItemThroughFace(int index, ItemStack stack, Direction direc) {
+    public boolean canPlaceItemThroughFace(int index, ItemStack stack, @Nullable Direction direc) {
         return this.canPlaceItem(index, stack);
     }
 

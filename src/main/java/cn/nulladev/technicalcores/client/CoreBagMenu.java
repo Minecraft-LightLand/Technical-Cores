@@ -34,7 +34,6 @@ public class CoreBagMenu extends BaseContainerMenu<CoreBagMenu> {
 
     public static final SpriteManager CORE_BAG = new SpriteManager(TechnicalCores.MODID, "core_bag");
 
-    private final Player player;
     private final ItemStack bag;
 
     public static CoreBagMenu fromNetwork(int windowId, Inventory inv, FriendlyByteBuf buf) {
@@ -44,10 +43,9 @@ public class CoreBagMenu extends BaseContainerMenu<CoreBagMenu> {
 
     public CoreBagMenu(int windowId, Inventory inventory, ItemStack bag) {
         super(TCRegistry.MT_CORE_BAG.get(), windowId, inventory, CORE_BAG, menu -> new CoreBagContainer(menu, bag), false);
-        this.player = inventory.player;
         this.bag = bag;
         this.addSlot("grid", stack -> stack.getItem() instanceof BaseCore);
-        if (!this.player.level.isClientSide()) {
+        if (!inventory.player.level.isClientSide()) {
             ListTag tag = CoreStorageBag.getListTag(bag);
             for (int i = 0; i < tag.size(); i++) {
                 this.container.setItem(i, ItemStack.of((CompoundTag) tag.get(i)));

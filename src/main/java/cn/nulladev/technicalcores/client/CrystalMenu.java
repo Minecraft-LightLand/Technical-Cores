@@ -79,8 +79,8 @@ public class CrystalMenu extends BaseContainerMenu<CrystalMenu> {
         if (!this.player.level.isClientSide) {
             Optional<AbstractCrystalRecipe<?>> optional = Objects.requireNonNull(player.getServer()).getRecipeManager().getRecipeFor(TCRecipes.RT_CRYSTAL.get(), (CrystalContainer) this.container, this.player.level);
             if (optional.isPresent()) {
-                AbstractCrystalRecipe<?> craftingrecipe = optional.get();
-                ItemStack itemstack = craftingrecipe.assemble((CrystalContainer) this.container);
+                AbstractCrystalRecipe<?> crystalRecipe = optional.get();
+                ItemStack itemstack = crystalRecipe.assemble((CrystalContainer) this.container);
                 this.container.setItem(getSize() * getSize(), itemstack);
             }
         }

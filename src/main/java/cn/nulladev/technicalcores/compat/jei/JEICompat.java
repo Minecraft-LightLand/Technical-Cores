@@ -41,11 +41,11 @@ public class JEICompat implements IModPlugin {
             new ResourceLocation(TechnicalCores.MODID, "textures/gui/container/crystal_5.png"),
             "jei.title.crystal.ultimate", 5);
 
-    public static final MachineRecipeCategory MACHINE = new MachineRecipeCategory(
-            new ResourceLocation(TechnicalCores.MODID, "core_machine"),
+    public static final MachineOutputRecipeCategory MACHINE_OUTPUT = new MachineOutputRecipeCategory(
+            new ResourceLocation(TechnicalCores.MODID, "machine_output"),
             new ItemStack(TCBlocks.AUTOMATIC_COLLECTOR.get()),
             new ResourceLocation(TechnicalCores.MODID, "textures/gui/container/core_machine.png"),
-            "jei.title.machine"
+            "jei.title.collector"
     );
 
     public JEICompat() {
@@ -72,7 +72,7 @@ public class JEICompat implements IModPlugin {
         registration.addRecipeCategories(BASIC.init(helper));
         registration.addRecipeCategories(ADVANCED.init(helper));
         registration.addRecipeCategories(ULTIMATE.init(helper));
-        registration.addRecipeCategories(MACHINE.init(helper));
+        registration.addRecipeCategories(MACHINE_OUTPUT.init(helper));
     }
 
     @Override
@@ -91,7 +91,7 @@ public class JEICompat implements IModPlugin {
         registration.addRecipes(BASIC.getRecipeType(), basic);
         registration.addRecipes(ADVANCED.getRecipeType(), advanced);
         registration.addRecipes(ULTIMATE.getRecipeType(), ultimate);
-        registration.addRecipes(MACHINE.getRecipeType(), machineDef);
+        registration.addRecipes(MACHINE_OUTPUT.getRecipeType(), machineDef);
     }
 
     @Override
@@ -104,7 +104,7 @@ public class JEICompat implements IModPlugin {
         registration.addRecipeCatalyst(TCItems.SPACE_CRYSTAL_BASIC.get().getDefaultInstance(), BASIC.getRecipeType());
         registration.addRecipeCatalyst(TCItems.SPACE_CRYSTAL_ADVANCED.get().getDefaultInstance(), ADVANCED.getRecipeType());
         registration.addRecipeCatalyst(TCItems.SPACE_CRYSTAL_ULTIMATE.get().getDefaultInstance(), ULTIMATE.getRecipeType());
-        registration.addRecipeCatalyst(new ItemStack(TCBlocks.AUTOMATIC_COLLECTOR.get()), MACHINE.getRecipeType());
+        registration.addRecipeCatalyst(new ItemStack(TCBlocks.AUTOMATIC_COLLECTOR.get()), MACHINE_OUTPUT.getRecipeType());
     }
 
     @Override

@@ -1,0 +1,38 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_azalea_tree_factory"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:wheat_seeds"
+      },
+      "_val": 12.5
+    },
+    {
+      "_key": {
+        "item": "minecraft:azalea"
+      },
+      "_val": 50.0
+    },
+    {
+      "_key": {
+        "item": "minecraft:moss_carpet"
+      },
+      "_val": 75.0
+    },
+    {
+      "_key": {
+        "item": "minecraft:flowering_azalea"
+      },
+      "_val": 12.5
+    },
+    {
+      "_key": {
+        "item": "minecraft:oak_log"
+      },
+      "_val": 100.0
+    }
+  ]
+}

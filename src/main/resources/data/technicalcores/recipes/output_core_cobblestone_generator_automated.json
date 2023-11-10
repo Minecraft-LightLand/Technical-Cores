@@ -1,0 +1,14 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_cobblestone_generator_automated"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:cobblestone"
+      },
+      "_val": 100.0
+    }
+  ]
+}

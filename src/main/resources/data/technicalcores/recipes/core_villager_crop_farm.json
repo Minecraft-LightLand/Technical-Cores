@@ -1,7 +1,7 @@
 {
-  "type": "vanillamagic:crystal_default",
+  "type": "technicalcores:crystal_default",
   "result": {
-    "item": "vanillamagic:concept_core_farm",
+    "item": "technicalcores:core_villager_crop_farm",
     "count": 1
   },
   "pattern": [
@@ -16,7 +16,7 @@
       "item": "minecraft:dirt"
     },
     "B": {
-      "item": "vanillamagic:concept_core_villager_spawn"
+      "item": "technicalcores:core_villager_breeder"
     },
     "C": {
       "item": "minecraft:composter"
@@ -31,7 +31,7 @@
       "item": "minecraft:hopper_minecart"
     },
     "G": {
-      "item": "vanillamagic:world_interaction_io"
+      "item": "technicalcores:world_interaction_io"
     }
   }
 }

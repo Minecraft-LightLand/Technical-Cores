@@ -78,7 +78,6 @@
                     "cooked_chicken_farm": "烤鸡厂",
                     "drain": "排水",
                     "enderman_farm": "末影人农场",
-                    "farm": "农场",
                     "end_frame_breaker": "传送门框架破坏器",
                     "ghast_farm": "恶魂农场",
                     "hoglin_farm": "疣猪兽农场",
@@ -96,6 +95,7 @@
                     "string_duplicator": "刷线机",
                     "tnt_duplicator": "TNT复制机",
                     "villager_breeder": "村民繁殖机",
+                    "villager_crop_farm": "傻子村民农场",
                     "world_eater": "世界吞噬者",
                     "zombified_piglin_farm": "僵尸猪灵农场"
                 }

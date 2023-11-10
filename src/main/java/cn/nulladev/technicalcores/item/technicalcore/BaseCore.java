@@ -67,11 +67,4 @@ public abstract class BaseCore extends Item implements ICooldownItem {
 
     public abstract boolean hasInteraction(@NotNull ItemStack stack);
 
-    public static boolean canUseNow(ItemStack stack) {
-        if (stack.getItem() instanceof BaseCore core) {
-            return core.hasInteraction(stack) && ICooldownItem.readTagCooldown(stack) <= 0;
-        }
-        return false;
-    }
-
 }

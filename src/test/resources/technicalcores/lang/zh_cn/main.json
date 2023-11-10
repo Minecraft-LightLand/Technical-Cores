@@ -32,7 +32,11 @@
         "basic": "基础空间水晶",
         "advanced": "进阶空间水晶",
         "ultimate": "终极空间水晶"
-      }
+      },
+      "collector": "自动收集器"
+    },
+    "tooltip": {
+      "output_prop": "概率:%.1f%%"
     }
   }
 }

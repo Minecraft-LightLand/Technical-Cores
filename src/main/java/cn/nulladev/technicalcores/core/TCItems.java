@@ -59,9 +59,9 @@ public class TCItems {
     public static RegistryObject<Item> CORE_ENDERMAN_FARM = register("core_enderman_farm", p -> new SimpleProjectileCore(p, 8, ThrownEnderpearl::new));
     public static RegistryObject<Item> CORE_SNOWBALL_FARM = register("core_snowball_farm", p -> new SimpleProjectileCore(p, 8, Snowball::new));
 
-    public static RegistryObject<Item> CORE_COOKED_CHICKEN_FARM = register("core_cooked_chicken_farm", p -> new SimpleFoodCore(p, 8, Foods.COOKED_CHICKEN));
-    public static RegistryObject<Item> CORE_HOGLIN_FARM = register("core_hoglin_farm", p -> new SimpleFoodCore(p, 8, Foods.COOKED_PORKCHOP));
-    public static RegistryObject<Item> CORE_MOB_GRINDER = register("core_mob_grinder", p -> new SimpleFoodCore(p, 8, Foods.ROTTEN_FLESH));
+    public static RegistryObject<Item> CORE_COOKED_CHICKEN_FARM = register("core_cooked_chicken_farm", p -> new SimpleFoodCore(p, 20, Foods.COOKED_CHICKEN));
+    public static RegistryObject<Item> CORE_HOGLIN_FARM = register("core_hoglin_farm", p -> new SimpleFoodCore(p, 20, Foods.COOKED_PORKCHOP));
+    public static RegistryObject<Item> CORE_MOB_GRINDER = register("core_mob_grinder", p -> new SimpleFoodCore(p, 20, Foods.ROTTEN_FLESH));
 
     public static RegistryObject<Item> CORE_TNT_DUPLICATOR = register("core_tnt_duplicator", p -> new SimpleEntityCore(p, 20, SimpleEntityCore::createPrimedTNTEntity));
     public static RegistryObject<Item> CORE_VILLAGER_BREEDER = register("core_villager_breeder", p -> new SimpleEntityCore(p, 12000, SimpleEntityCore::createBabyVillager));
@@ -78,11 +78,10 @@ public class TCItems {
     public static RegistryObject<Item> CORE_BEDROCK_BREAKER = register("core_bedrock_breaker", p -> new SimpleRemoveCore(p, 20, Blocks.BEDROCK));
 
     public static RegistryObject<Item> CORE_BONE_MEAL_FARM = register("core_bone_meal_farm", p -> new BoneMealCore(p, 20));
+    public static RegistryObject<Item> CORE_DRAIN = register("core_drain", p -> new DrainCore(p, 200));
     public static RegistryObject<Item> CORE_MELON_FARM = register("core_melon_farm", p -> new MelonCore(p, 60));
+    public static RegistryObject<Item> CORE_VILLAGER_CROP_FARM = register("core_villager_crop_farm", p -> new VillagerCropFarm(p, 600));
     public static RegistryObject<Item> CORE_WORLD_EATER = register("core_world_eater", p -> new WorldEaterCore(p, 6000));
-
-//    public static RegistryObject<Item> CONCEPT_CORE_DRAIN = register("concept_core_drain", ConceptCoreDrain::new);
-//    public static RegistryObject<Item> CONCEPT_CORE_FARM = register("concept_core_farm", ConceptCoreFarm::new);
 
     public static <V extends Item> RegistryObject<V> register(String name, Function<Item.Properties, V> sup) {
         return ITEM.register(name, () -> sup.apply(new Item.Properties().tab(TCCreativeTab.INSTANCE)));
