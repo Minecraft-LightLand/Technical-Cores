@@ -20,13 +20,12 @@ import net.minecraft.world.level.Level;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class WorldInteractionWand extends Item implements ICooldownItem, IContentedItem {
+public class WorldInteractionWand extends Item implements IContentedItem {
 
     public WorldInteractionWand(Properties props) {
         super(props.stacksTo(1));
     }
 
-    @Override
     public int getTotalCooldown(ItemStack stack) {
         if (IContentedItem.hasContent(stack)) {
             ItemStack content = IContentedItem.readTagContent(stack);
@@ -37,7 +36,7 @@ public class WorldInteractionWand extends Item implements ICooldownItem, IConten
         return -1;
     }
 
-    public int getCoreCooldown(ItemStack stack) {
+    public int getCurrentCooldown(ItemStack stack) {
         if (IContentedItem.hasContent(stack)) {
             ItemStack content = IContentedItem.readTagContent(stack);
             return ICooldownItem.readTagCooldown(content);
@@ -47,25 +46,25 @@ public class WorldInteractionWand extends Item implements ICooldownItem, IConten
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slot, boolean selected) {
-        if (this.getCoreCooldown(stack) > 0) {
+        if (this.getCurrentCooldown(stack) > 0) {
             ItemStack content = IContentedItem.readTagContent(stack);
-            ICooldownItem.writeTagCooldown(content, ICooldownItem.readTagCooldown(stack) - 1);
+            ICooldownItem.writeTagCooldown(content, ICooldownItem.readTagCooldown(content) - 1);
         }
     }
 
     @Override
     public boolean isBarVisible(ItemStack stack) {
-        return getTotalCooldown(stack) > 0 && getCoreCooldown(stack) > 0;
+        return getTotalCooldown(stack) > 0 && getCurrentCooldown(stack) > 0;
     }
 
     @Override
     public int getBarWidth(ItemStack stack) {
-        return Math.round(13F - 13F * getCoreCooldown(stack) / getTotalCooldown(stack));
+        return Math.round(13F - 13F * getCurrentCooldown(stack) / getTotalCooldown(stack));
     }
 
     @Override
     public int getBarColor(ItemStack stack) {
-        float f = Math.max(0.0F, 1F * (getTotalCooldown(stack) - getCoreCooldown(stack)) / getTotalCooldown(stack));
+        float f = Math.max(0.0F, 1F * (getTotalCooldown(stack) - getCurrentCooldown(stack)) / getTotalCooldown(stack));
         return Mth.hsvToRgb(f / 3.0F, 1.0F, 1.0F);
     }
 
@@ -141,8 +140,8 @@ public class WorldInteractionWand extends Item implements ICooldownItem, IConten
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag flags) {
         if (!IContentedItem.hasContent(stack))
             list.add(Component.translatable("technicalcores.misc.miss_core").withStyle(ChatFormatting.RED));
-        else if (getCoreCooldown(stack) > 0)
-            list.add(Component.translatable("technicalcores.misc.cd2", getCoreCooldown(stack)).withStyle(ChatFormatting.RED));
+        else if (getCurrentCooldown(stack) > 0)
+            list.add(Component.translatable("technicalcores.misc.cd2", getCurrentCooldown(stack)).withStyle(ChatFormatting.RED));
         else
             list.add(Component.translatable("technicalcores.misc.cd1").withStyle(ChatFormatting.GREEN));
     }
