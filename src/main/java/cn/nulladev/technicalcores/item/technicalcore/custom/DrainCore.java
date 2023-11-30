@@ -6,7 +6,10 @@ import com.google.common.collect.Lists;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.Tuple;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
@@ -30,6 +33,15 @@ public class DrainCore extends BaseCore implements IWandInteraction {
     @Override
     public boolean hasInteraction(@NotNull ItemStack stack) {
         return true;
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> wandUse(Level level, Player player, InteractionHand hand) {
+        boolean flag = removeWaterBreadthFirstSearch(level, player.getOnPos());
+        if (flag)
+            return InteractionResultHolder.success(player.getItemInHand(hand));
+        else
+            return InteractionResultHolder.pass(player.getItemInHand(hand));
     }
 
     @Override

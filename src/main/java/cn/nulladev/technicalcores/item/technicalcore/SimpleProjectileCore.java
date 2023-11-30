@@ -29,7 +29,7 @@ public class SimpleProjectileCore extends BaseCore implements IWandInteraction {
 
     @Override
     public boolean hasInteraction(@NotNull ItemStack stack) {
-        return false;
+        return true;
     }
 
     @Override

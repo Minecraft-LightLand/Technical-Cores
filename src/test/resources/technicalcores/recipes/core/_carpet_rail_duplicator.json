@@ -14,10 +14,10 @@
       "item": "minecraft:slime_block"
     },
     "B": {
-      "item": "technicalcores:world_interaction_io"
+      "item": "minecraft:sticky_piston"
     },
     "C": {
-      "item": "minecraft:sticky_piston"
+      "item": "technicalcores:world_interaction_io"
     },
     "D": {
       "item": "minecraft:observer"
