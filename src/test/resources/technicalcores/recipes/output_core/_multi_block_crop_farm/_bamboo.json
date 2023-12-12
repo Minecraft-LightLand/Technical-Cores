@@ -1,0 +1,15 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_multi_block_crop_farm",
+    "nbt": "{tag_tc_content:{Count:1b,id:\"minecraft:bamboo\"}}"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:bamboo"
+      },
+      "_val": 100.0
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_multi_block_crop_farm",
+    "count": 1
+  },
+  "pattern": [
+    "  A ",
+    "BC  ",
+    "  AD",
+    "EEFG"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:dirt"
+    },
+    "B": {
+      "item": "technicalcores:modifier_redstone_pulse_controllable"
+    },
+    "C": {
+      "item": "technicalcores:modifier_piston_worm"
+    },
+    "D": {
+      "item": "minecraft:water_bucket"
+    },
+    "E": {
+      "item": "minecraft:powered_rail"
+    },
+    "F": {
+      "item": "minecraft:hopper_minecart"
+    },
+    "G": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

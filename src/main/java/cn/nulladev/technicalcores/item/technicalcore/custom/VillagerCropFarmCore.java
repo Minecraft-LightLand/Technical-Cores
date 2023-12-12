@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class VillagerCropFarm extends ContentedCore implements IWandInteraction {
+public class VillagerCropFarmCore extends ContentedCore implements IWandInteraction {
     public static final List<Item> crops = List.of(
             Items.WHEAT_SEEDS,
             Items.POTATO,
@@ -22,7 +22,7 @@ public class VillagerCropFarm extends ContentedCore implements IWandInteraction 
             Items.BEETROOT_SEEDS
     );
 
-    public VillagerCropFarm(Properties props, int cooldown) {
+    public VillagerCropFarmCore(Properties props, int cooldown) {
         super(props, cooldown, crops);
     }
 

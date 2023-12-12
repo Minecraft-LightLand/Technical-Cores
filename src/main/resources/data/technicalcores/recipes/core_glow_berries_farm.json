@@ -1,0 +1,42 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_glow_berries_farm",
+    "count": 1
+  },
+  "pattern": [
+    "ABBC",
+    "DDED",
+    "FFFF",
+    "GGHI"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:beehive"
+    },
+    "B": {
+      "item": "minecraft:cobweb"
+    },
+    "C": {
+      "item": "minecraft:flowering_azalea_leaves"
+    },
+    "D": {
+      "tag": "minecraft:trapdoors"
+    },
+    "E": {
+      "item": "technicalcores:modifier_white_box"
+    },
+    "F": {
+      "item": "minecraft:glow_berries"
+    },
+    "G": {
+      "item": "minecraft:powered_rail"
+    },
+    "H": {
+      "item": "minecraft:hopper_minecart"
+    },
+    "I": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

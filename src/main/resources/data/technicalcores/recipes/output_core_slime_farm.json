@@ -1,0 +1,14 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_slime_farm"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:slime_ball"
+      },
+      "_val": 100.0
+    }
+  ]
+}

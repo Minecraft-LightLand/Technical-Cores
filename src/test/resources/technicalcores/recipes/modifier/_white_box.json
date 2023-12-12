@@ -1,0 +1,24 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:modifier_white_box",
+    "count": 1
+  },
+  "pattern": [
+    "    ",
+    "    ",
+    " AB ",
+    "CCCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:torch"
+    },
+    "B": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "C": {
+      "item": "minecraft:grass_block"
+    }
+  }
+}

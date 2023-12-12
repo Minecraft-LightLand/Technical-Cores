@@ -83,4 +83,12 @@ public class MultiplePlacementCore extends ContentedCore implements IWandInterac
             Items.DAMAGED_ANVIL
     );
 
+    public static final List<Item> multi_block_crops = List.of(
+            Items.BAMBOO,
+            Items.KELP,
+            Items.SUGAR_CANE,
+            Items.TWISTING_VINES,
+            Items.WEEPING_VINES
+    );
+
 }

@@ -1,0 +1,23 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:modifier_iron_golem",
+    "count": 1
+  },
+  "pattern": [
+    " A ",
+    "BBB",
+    " BC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "B": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "technicalcores:world_interaction_io"
+    }
+  }
+}

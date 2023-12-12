@@ -1,0 +1,33 @@
+{
+  "type": "technicalcores:crystal_default",
+  "result": {
+    "item": "technicalcores:core_slime_farm",
+    "count": 1
+  },
+  "pattern": [
+    "A  A",
+    "BC B",
+    " DE ",
+    " FF "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:redstone_torch"
+    },
+    "B": {
+      "item": "technicalcores:modifier_dark_box"
+    },
+    "C": {
+      "item": "technicalcores:modifier_iron_golem"
+    },
+    "D": {
+      "item": "technicalcores:world_interaction_io"
+    },
+    "E": {
+      "item": "minecraft:water_bucket"
+    },
+    "F": {
+      "item": "minecraft:magma_block"
+    }
+  }
+}

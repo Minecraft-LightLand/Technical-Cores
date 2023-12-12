@@ -1,0 +1,14 @@
+{
+  "type": "technicalcores:core_output_default",
+  "input": {
+    "item": "technicalcores:core_glow_berries_farm"
+  },
+  "outputs": [
+    {
+      "_key": {
+        "item": "minecraft:glow_berries"
+      },
+      "_val": 100.0
+    }
+  ]
+}
