@@ -1,0 +1,15 @@
+{
+    "name": "Modifier: Piston Worm",
+    "icon": "technicalcores:modifier_piston_worm",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_piston_worm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Modifier: Piston Worm$() represents a piston worm moving automatically."
+      }
+    ]
+  }

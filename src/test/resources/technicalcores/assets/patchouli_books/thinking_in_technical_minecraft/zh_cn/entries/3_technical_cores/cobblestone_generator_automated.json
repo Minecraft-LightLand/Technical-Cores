@@ -1,0 +1,15 @@
+{
+    "name": "核心: 自动造石机(圆石)",
+    "icon": "technicalcores:core_cobblestone_generator_automated",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_cobblestone_generator_automated"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 自动造石机(圆石)$()代表一个使用TNT复制机破坏造石机生成的圆石的装置。$(br2)使用可放置圆石。$(br2)自动收集器内产出圆石。"
+      }
+    ]
+  }

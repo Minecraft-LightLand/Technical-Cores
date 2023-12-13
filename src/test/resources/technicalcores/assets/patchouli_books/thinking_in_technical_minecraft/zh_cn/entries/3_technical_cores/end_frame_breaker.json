@@ -1,0 +1,15 @@
+{
+    "name": "核心: 传送门框架破坏机",
+    "icon": "technicalcores:core_end_frame_breaker",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:core_end_frame_breaker"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 传送门框架破坏机$()代表一个可以破坏末地传送门框架的装置。$(br2)使用可破坏一块末地传送门框架。$(br2)不能放于自动收集器内。"
+      }
+    ]
+  }

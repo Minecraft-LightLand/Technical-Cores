@@ -1,0 +1,15 @@
+{
+    "name": "Core: Enderman Farm",
+    "icon": "technicalcores:core_enderman_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_ultimate",
+        "recipe": "technicalcores:core_enderman_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Enderman Farm$() represents a enderman farm using endermite. $(br2)Throw an enderpearl upon using. $(br2)Output enderpearl when put in automatic collector."
+      }
+    ]
+  }

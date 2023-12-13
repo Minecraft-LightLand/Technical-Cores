@@ -1,0 +1,15 @@
+{
+    "name": "修饰: 坠落",
+    "icon": "technicalcores:modifier_falling",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_falling"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)修饰: 坠落$()代表一个从高处坠落的空间。"
+      }
+    ]
+  }

@@ -38,5 +38,11 @@
     "tooltip": {
       "output_prop": "概率: %.1f%%"
     }
+  },
+  "pachouli_books": {
+    "technicalcores": {
+      "name": "生电：从入门到精通",
+      "landing_text": "红石学多了，就丧失了人性。 ——黑山大叔"
+    }
   }
 }

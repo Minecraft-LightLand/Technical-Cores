@@ -1,0 +1,15 @@
+{
+    "name": "核心: 养鸡场",
+    "icon": "technicalcores:core_chicken_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:core_chicken_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 养鸡场$()代表一个自动投掷鸡下的蛋来无限生鸡的装置。$(br2)使用效果为投掷一个鸡蛋。$(br2)自动收集器内产出鸡蛋。想自动生成鸡肉和羽毛请参考$(l:3_technical_cores/cooked_chicken_farm)核心: 烤鸡厂$()。"
+      }
+    ]
+  }

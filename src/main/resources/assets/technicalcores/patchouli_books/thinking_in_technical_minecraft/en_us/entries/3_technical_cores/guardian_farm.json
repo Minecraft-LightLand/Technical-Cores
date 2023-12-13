@@ -1,0 +1,15 @@
+{
+    "name": "Core: Guardian Farm",
+    "icon": "technicalcores:core_guardian_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_ultimate",
+        "recipe": "technicalcores:core_guardian_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Guardian Farm$() represents a device that automatically generates guardian and kills it. $(br2) Eat a raw cod upon using. $(br2)Please refer to JEI for the items dropped by the core when put in the automatic collector."
+      }
+    ]
+  }

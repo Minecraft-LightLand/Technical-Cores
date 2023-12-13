@@ -1,0 +1,15 @@
+{
+    "name": "Core: Hoglin Farm",
+    "icon": "technicalcores:core_hoglin_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_ultimate",
+        "recipe": "technicalcores:core_hoglin_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Hoglin Farm$() represents a hoglin farm that spawns hoglin and kills it. $(br2) Eat a cooked pork upon using. $(br2)Please refer to JEI for outputs in automatic collector."
+      }
+    ]
+  }

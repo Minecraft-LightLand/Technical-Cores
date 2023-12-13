@@ -1,0 +1,15 @@
+{
+    "name": "Core: Azalea Tree Factory",
+    "icon": "technicalcores:core_azalea_tree_factory",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_ultimate",
+        "recipe": "technicalcores:core_azalea_tree_factory"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Azalea Tree Factory$() represents an automatic bonemeal fertilizing azalea tree factory. $(br2)Place an oak block upon using. $(br2)Please refer to JEI for outputs in automatic collector."
+      }
+    ]
+  }

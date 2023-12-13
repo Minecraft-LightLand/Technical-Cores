@@ -1,0 +1,15 @@
+{
+    "name": "Core: Cactus Farm",
+    "icon": "technicalcores:core_cactus_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_cactus_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Cactus Farm$() represents a device that automatically collects growing cactus. $(br2)Output cactus when put in automatic collector."
+      }
+    ]
+  }

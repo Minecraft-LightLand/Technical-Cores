@@ -1,0 +1,15 @@
+{
+    "name": "核心: 骨粉机",
+    "icon": "technicalcores:core_bone_meal_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_bone_meal_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 骨粉机$()代表一个骨粉催熟苔藓块然后收集并堆肥自产自销的骨粉复制机。$(br2)使用相当于使用骨粉。$(br2)自动收集器内产出骨粉。"
+      }
+    ]
+  }

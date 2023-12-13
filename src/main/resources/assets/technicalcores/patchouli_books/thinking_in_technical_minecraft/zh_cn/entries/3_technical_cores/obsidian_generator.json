@@ -1,0 +1,15 @@
+{
+    "name": "核心: 造石机(黑曜石)",
+    "icon": "technicalcores:core_obsidian_generator",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_obsidian_generator"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 造石机(黑曜石)$()代表一个自动生成岩浆并接触水转化成黑曜石的装置。$(br2)使用可放置黑曜石。$(br2)不能放于自动收集器内（由于只能放置黑曜石而无法挖掘）。想自动生成黑曜石请参考$(l:3_technical_cores/obsidian_generator_automated)核心: 自动造石机(黑曜石)$()。"
+      }
+    ]
+  }

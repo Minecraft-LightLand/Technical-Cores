@@ -1,0 +1,15 @@
+{
+    "name": "核心: 刷沙机",
+    "icon": "technicalcores:core_sand_duplicator",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_sand_duplicator"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 刷沙机$()代表一个利用末地传送门实现的复制重力方块的装置。$(br2)可填装任意种类的沙子、混凝土粉末、铁砧以及砂砾、龙蛋。使用可放置填装的重力方块。$(br2)自动收集器内产出填装的重力方块。"
+      }
+    ]
+  }

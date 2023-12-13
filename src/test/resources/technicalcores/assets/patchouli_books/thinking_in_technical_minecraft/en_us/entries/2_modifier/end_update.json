@@ -1,0 +1,15 @@
+{
+    "name": "Modifier: End Update",
+    "icon": "technicalcores:modifier_end_update",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_end_update"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Modifier: End Update$() represents a dropper dropping items into the end portal automatically, in order to regenerate the spawn area."
+      }
+    ]
+  }

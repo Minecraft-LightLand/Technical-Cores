@@ -1,0 +1,12 @@
+{
+    "name": "World Interaction IO",
+    "icon": "technicalcores:world_interaction_io",
+    "category": "technicalcores:1_io_tools",
+    "pages": [
+      {
+        "type": "patchouli:crafting",
+        "recipe": "technicalcores:world_interaction_io",
+        "text": "Crafting material. The world interaction io represents $(bold)you$() interacting with the world."
+      }
+    ]
+  }

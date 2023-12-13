@@ -1,0 +1,15 @@
+{
+    "name": "Modifier: Shulker",
+    "icon": "technicalcores:modifier_shulker",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_shulker"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Modifier: Shulker$() represents a shulker."
+      }
+    ]
+  }

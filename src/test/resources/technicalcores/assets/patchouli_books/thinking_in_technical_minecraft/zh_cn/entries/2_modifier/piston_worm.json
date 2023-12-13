@@ -1,0 +1,15 @@
+{
+    "name": "修饰: 活塞虫",
+    "icon": "technicalcores:modifier_piston_worm",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_piston_worm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)修饰: 活塞虫$()代表一个自动前进的活塞虫。"
+      }
+    ]
+  }

@@ -1,0 +1,15 @@
+{
+    "name": "修饰: 雪傀儡",
+    "icon": "technicalcores:modifier_snow_golem",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_snow_golem"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)修饰: 雪傀儡$()代表一只雪傀儡。"
+      }
+    ]
+  }

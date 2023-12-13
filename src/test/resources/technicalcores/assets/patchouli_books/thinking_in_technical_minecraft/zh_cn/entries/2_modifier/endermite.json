@@ -1,0 +1,15 @@
+{
+    "name": "修饰: 末影螨",
+    "icon": "technicalcores:modifier_endermite",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_endermite"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)修饰: 末影螨$()代表一只被重命名过的末影螨。"
+      }
+    ]
+  }

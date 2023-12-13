@@ -1,0 +1,15 @@
+{
+    "name": "Core: TNT Duplicator",
+    "icon": "technicalcores:core_TNT_duplicator",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_TNT_duplicator"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: TNT Duplicator$() represents a device that duplicates flaming TNT. $(br2)Spawn a flaming TNT upon using. $(br2)Cannot be put in automatic collector."
+      }
+    ]
+  }

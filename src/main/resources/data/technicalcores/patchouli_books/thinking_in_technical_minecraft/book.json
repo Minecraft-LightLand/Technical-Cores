@@ -1,0 +1,9 @@
+{
+  "name": "pachouli_books.technicalcores.name",
+  "landing_text": "pachouli_books.technicalcores.landing_text",
+  "version": 1,
+  "creative_tab": "technicalcores",
+  "use_resource_pack": true,
+  "book_texture": "patchouli:textures/gui/book_green.png",
+  "model": "patchouli:book_green"
+}

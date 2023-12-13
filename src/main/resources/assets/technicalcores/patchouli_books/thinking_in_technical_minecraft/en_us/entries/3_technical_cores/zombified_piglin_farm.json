@@ -1,0 +1,15 @@
+{
+    "name": "Core: Zombified Piglin Farm",
+    "icon": "technicalcores:core_zombified_piglin_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_ultimate",
+        "recipe": "technicalcores:core_zombified_piglin_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Zombified Piglin Farm$() represents a device that use turtle egg to attract zombified piglin and kill it. $(br2)Cannot be filled in wands. $(br2)Please refer to JEI for outputs in automatic collector."
+      }
+    ]
+  }

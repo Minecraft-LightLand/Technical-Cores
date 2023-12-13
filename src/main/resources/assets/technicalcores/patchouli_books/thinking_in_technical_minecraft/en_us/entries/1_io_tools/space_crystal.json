@@ -1,0 +1,20 @@
+{
+    "name": "Space Crystal",
+    "icon": "technicalcores:space_crystal_basic",
+    "category": "technicalcores:1_io_tools",
+    "pages": [
+      {
+        "type": "patchouli:text",
+        "text": "There are three tiers of $(bold)space crystal$(): basic, advanced, and ultimate, which corresponds to 3x3, 4x4, and 5x5 spaces. $(br2)Right click when holding the space crystal to put in materials to craft."
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "technicalcores:space_crystal_basic",
+        "recipe2": "technicalcores:space_crystal_advanced"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "technicalcores:space_crystal_ultimate"
+      }
+    ]
+  }

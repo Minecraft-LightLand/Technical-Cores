@@ -1,0 +1,15 @@
+{
+    "name": "Core: Iron Golem Farm",
+    "icon": "technicalcores:core_iron_golem_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_ultimate",
+        "recipe": "technicalcores:core_iron_golem_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Iron Golem Farm$() represents a iron golem farm that automatically kills iron golems spawned in village. $(br2)Cannot be filled in wands. $(br2)Please refer to JEI for outputs in automatic collector."
+      }
+    ]
+  }

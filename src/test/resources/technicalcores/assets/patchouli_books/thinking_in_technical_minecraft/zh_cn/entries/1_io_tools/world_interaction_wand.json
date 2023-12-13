@@ -1,0 +1,16 @@
+{
+    "name": "世界交互法杖",
+    "icon": "technicalcores:world_interaction_wand",
+    "category": "technicalcores:1_io_tools",
+    "pages": [
+      {
+        "type": "patchouli:crafting",
+        "recipe": "technicalcores:world_interaction_wand",
+        "text": "使用法杖便可以发挥出核心的威力。"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "将未装配核心的法杖在合成台中与核心进行合成，就可以将核心装配到法杖上。之后右键便可以在世界中使用。$(br2)将法杖在合成台中合成一次即可卸下核心。$(br2)并非所有核心都能装配在法杖上。有些不具有使用效果的核心只能在$(l:1_io_tools/automatic_collector)自动收集器$()中使用。"
+      }
+    ]
+  }

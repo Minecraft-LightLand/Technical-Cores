@@ -1,0 +1,16 @@
+{
+    "name": "World Interaction Wand",
+    "icon": "technicalcores:world_interaction_wand",
+    "category": "technicalcores:1_io_tools",
+    "pages": [
+      {
+        "type": "patchouli:crafting",
+        "recipe": "technicalcores:world_interaction_wand",
+        "text": "You can use the wand to unleash the power of the cores."
+      },
+      {
+        "type": "patchouli:text",
+        "text": "Craft the core with a empty wand in the crafting table to assemble it onto the wand. Press right button to use it. $(br2)Craft the wand once in the crafting table to unassemble the core. $(br2)Not all the cores can fill into the wand. Some cores that have no using effect can only be put in the $(l:1_io_tools/automatic_collector)automatic collector$()."
+      }
+    ]
+  }

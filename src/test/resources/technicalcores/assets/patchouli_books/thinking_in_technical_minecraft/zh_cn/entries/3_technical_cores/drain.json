@@ -1,0 +1,15 @@
+{
+    "name": "核心: 排水",
+    "icon": "technicalcores:core_drain",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:core_drain"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 排水$()代表使用$(l:4_miscellaneous/infinite_fuel)无限之燃料$()自动将湿海绵烤干然后提供给玩家放置。$(br2)使用效果相当于在指向的位置放置一块海绵。$(br2)不能放于自动收集器内。"
+      }
+    ]
+  }

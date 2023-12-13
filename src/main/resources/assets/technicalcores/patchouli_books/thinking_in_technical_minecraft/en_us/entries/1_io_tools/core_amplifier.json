@@ -1,0 +1,12 @@
+{
+    "name": "Core Amplifier",
+    "icon": "technicalcores:core_amplifier",
+    "category": "technicalcores:1_io_tools",
+    "pages": [
+      {
+        "type": "patchouli:crafting",
+        "recipe": "technicalcores:core_amplifier",
+        "text": "Crafting material. Essential thing for unleashing the core's power into the world."
+      }
+    ]
+  }

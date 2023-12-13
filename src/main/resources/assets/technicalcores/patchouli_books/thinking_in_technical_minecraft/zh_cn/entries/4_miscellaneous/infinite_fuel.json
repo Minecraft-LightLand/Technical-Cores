@@ -1,0 +1,12 @@
+{
+    "name": "无限之燃料",
+    "icon": "technicalcores:infinite_fuel",
+    "category": "technicalcores:4_miscellaneous",
+    "pages": [
+      {
+        "type": "patchouli:crafting",
+        "recipe": "technicalcores:infinite_fuel",
+        "text": "无限之燃料可以用地毯机复制的地毯为熔炉无限供应燃料。"
+      }
+    ]
+  }

@@ -1,0 +1,15 @@
+{
+    "name": "Modifier: Dark Box",
+    "icon": "technicalcores:modifier_dark_box",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:modifier_dark_box"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Modifier: Dark Box$() represents a dark box which could generate mobs."
+      }
+    ]
+  }

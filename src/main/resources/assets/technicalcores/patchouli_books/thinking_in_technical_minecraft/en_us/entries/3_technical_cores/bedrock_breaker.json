@@ -1,0 +1,15 @@
+{
+    "name": "Core: Bedrock Breaker",
+    "icon": "technicalcores:core_bedrock_breaker",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_bedrock_breaker"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Bedrock Breaker$() represents a device that can break bedrock. $(br2)Breaks a bedrock upon using. $(br2)Cannot be put in automatic collector."
+      }
+    ]
+  }

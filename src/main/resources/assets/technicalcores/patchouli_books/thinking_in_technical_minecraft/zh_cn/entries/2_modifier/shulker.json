@@ -1,0 +1,15 @@
+{
+    "name": "修饰: 潜影贝",
+    "icon": "technicalcores:modifier_shulker",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_shulker"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)修饰: 潜影贝$()代表一只潜影贝。"
+      }
+    ]
+  }

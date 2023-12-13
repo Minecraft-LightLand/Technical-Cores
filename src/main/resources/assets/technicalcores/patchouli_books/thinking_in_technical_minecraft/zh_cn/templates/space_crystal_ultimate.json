@@ -1,0 +1,116 @@
+{
+	"processor": "cn.nulladev.technicalcores.compat.patchouli.CrystalRecipeProcessor",
+	"components": [
+		{
+			"type": "patchouli:image",
+			"image": "technicalcores:textures/gui/pachouli_books/crafting.png",
+			"texture_width": 128,
+			"texture_height": 256,
+			"width": 99,
+			"height": 99,
+			"u": 0,
+			"v": 143,
+			"x": 10,
+			"y": 10
+		},
+		{
+			"type": "patchouli:image",
+			"image": "technicalcores:textures/gui/pachouli_books/crafting.png",
+			"texture_width": 128,
+			"texture_height": 256,
+			"width": 62,
+			"height": 23,
+			"u": 65,
+			"v": 0,
+			"x": 29,
+			"y": 115
+		},
+		{
+			"type": "patchouli:item",
+			"item": "technicalcores:space_crystal_ultimate",
+			"x": 33,
+			"y": 119
+		},
+        {
+            "type": "patchouli:item",
+            "item": "#recipe",
+            "x": 72,
+            "y": 119
+        },
+		{
+			"type": "patchouli:item", "item": "#item00", "x": 14, "y": 14
+		},
+		{
+			"type": "patchouli:item", "item": "#item01", "x": 33, "y": 14
+		},
+		{
+			"type": "patchouli:item", "item": "#item02", "x": 52, "y": 14
+		},
+		{
+			"type": "patchouli:item", "item": "#item03", "x": 71, "y": 14
+		},
+		{
+			"type": "patchouli:item", "item": "#item04", "x": 90, "y": 14
+		},
+		{
+			"type": "patchouli:item", "item": "#item10", "x": 14, "y": 33
+		},
+		{
+			"type": "patchouli:item", "item": "#item11", "x": 33, "y": 33
+		},
+		{
+			"type": "patchouli:item", "item": "#item12", "x": 52, "y": 33
+		},
+		{
+			"type": "patchouli:item", "item": "#item13", "x": 71, "y": 33
+		},
+		{
+			"type": "patchouli:item", "item": "#item14", "x": 90, "y": 33
+		},
+		{
+			"type": "patchouli:item", "item": "#item20", "x": 14, "y": 52
+		},
+		{
+			"type": "patchouli:item", "item": "#item21", "x": 33, "y": 52
+		},
+		{
+			"type": "patchouli:item", "item": "#item22", "x": 52, "y": 52
+		},
+		{
+			"type": "patchouli:item", "item": "#item23", "x": 71, "y": 52
+		},
+		{
+			"type": "patchouli:item", "item": "#item24", "x": 90, "y": 52
+		},
+		{
+			"type": "patchouli:item", "item": "#item30", "x": 14, "y": 71
+		},
+		{
+			"type": "patchouli:item", "item": "#item31", "x": 33, "y": 71
+		},
+		{
+			"type": "patchouli:item", "item": "#item32", "x": 52, "y": 71
+		},
+		{
+			"type": "patchouli:item", "item": "#item33", "x": 71, "y": 71
+		},
+		{
+			"type": "patchouli:item", "item": "#item34", "x": 90, "y": 71
+		},
+		{
+			"type": "patchouli:item", "item": "#item40", "x": 14, "y": 90
+		},
+		{
+			"type": "patchouli:item", "item": "#item41", "x": 33, "y": 90
+		},
+		{
+			"type": "patchouli:item", "item": "#item42", "x": 52, "y": 90
+		},
+		{
+			"type": "patchouli:item", "item": "#item43", "x": 71, "y": 90
+		},
+		{
+			"type": "patchouli:item", "item": "#item44", "x": 90, "y": 90
+		}
+    ]
+}

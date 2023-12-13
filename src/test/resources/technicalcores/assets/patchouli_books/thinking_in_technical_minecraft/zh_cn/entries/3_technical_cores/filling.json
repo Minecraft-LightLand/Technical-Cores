@@ -1,0 +1,11 @@
+{
+    "name": "可填装核心",
+    "icon": "technicalcores:core_sand_duplicator",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "patchouli:text",
+        "text": "有些核心需要进行填装，例如刷沙机需要指定所刷的沙子方块。$(br2)填装方法是在合成台中与物品进行合成。单独放入合成台合成可返还填装方块。"
+      }
+    ]
+  }

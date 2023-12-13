@@ -1,0 +1,15 @@
+{
+    "name": "Core: Village Breeder",
+    "icon": "technicalcores:core_villager_breeder",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_villager_breeder"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Village Breeder$() represents a device that automatically breeds villagers. $(br2)Spawn a small villager upon using. $(br2)Cannot be put in automatic collector."
+      }
+    ]
+  }

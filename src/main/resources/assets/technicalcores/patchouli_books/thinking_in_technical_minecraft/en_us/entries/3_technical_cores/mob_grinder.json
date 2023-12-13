@@ -1,0 +1,15 @@
+{
+    "name": "Core: Mob Grinder",
+    "icon": "technicalcores:core_mob_grinder",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_mob_grinder"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Mob Grinder$() represents a mob grinder where mobs spawn in a dark box and fall to death. $(br2)Eat a rotten flesh upon using. $(br2)Can generate items from zombie, skeleton, spider, creeper, and witch. Please refer to JEI for details."
+      }
+    ]
+  }

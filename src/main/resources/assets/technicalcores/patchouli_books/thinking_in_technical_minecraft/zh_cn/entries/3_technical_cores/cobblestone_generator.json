@@ -1,0 +1,15 @@
+{
+    "name": "核心: 造石机(圆石)",
+    "icon": "technicalcores:core_cobblestone_generator",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:core_cobblestone_generator"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 造石机(圆石)$()代表一个水遇岩浆自动产生圆石的装置。$(br2)使用可放置圆石。$(br2)不能放于自动收集器内（由于只能放置圆石而无法挖掘）。想自动生成圆石请参考$(l:3_technical_cores/cobblestone_generator_automated)核心: 自动造石机(圆石)$()。"
+      }
+    ]
+  }

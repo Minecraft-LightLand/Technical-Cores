@@ -1,0 +1,15 @@
+{
+    "name": "核心: 杜鹃树场",
+    "icon": "technicalcores:core_azalea_tree_factory",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_ultimate",
+        "recipe": "technicalcores:core_azalea_tree_factory"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 杜鹃树场$()代表一个自动骨粉催熟的杜鹃树场。$(br2)使用可放置橡木方块。$(br2)自动收集器内产出请查询jei。"
+      }
+    ]
+  }

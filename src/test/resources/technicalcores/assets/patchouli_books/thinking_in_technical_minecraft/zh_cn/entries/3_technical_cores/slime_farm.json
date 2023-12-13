@@ -1,0 +1,15 @@
+{
+    "name": "核心: 史莱姆农场",
+    "icon": "technicalcores:core_slime_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_slime_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 史莱姆农场$()代表一个刷新史莱姆被铁傀儡吸引杀死的史莱姆农场。$(br2)不可放于法杖内。$(br2)自动收集器内产出粘液球。"
+      }
+    ]
+  }

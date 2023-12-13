@@ -1,0 +1,15 @@
+{
+    "name": "Core: String Duplicator",
+    "icon": "technicalcores:core_string_duplicator",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:core_string_duplicator"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: String Duplicator$() represents a device that can automatically duplicates string. $(br2)Place a string upon using. $(br2)Output string when put in automatic collector."
+      }
+    ]
+  }

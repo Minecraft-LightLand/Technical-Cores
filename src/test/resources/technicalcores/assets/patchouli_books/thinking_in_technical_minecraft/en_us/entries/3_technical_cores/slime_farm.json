@@ -1,0 +1,15 @@
+{
+    "name": "Core: Slime Farm",
+    "icon": "technicalcores:core_slime_farm",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_slime_farm"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Slime Farm$() represents a slime farm that use iron golem to gather slimes and kill them. $(br2)Can not be filled in wand. $(br2)Output slime balls when put in automatic collector."
+      }
+    ]
+  }

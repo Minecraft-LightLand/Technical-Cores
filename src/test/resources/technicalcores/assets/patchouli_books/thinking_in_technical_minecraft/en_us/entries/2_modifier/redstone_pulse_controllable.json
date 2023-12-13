@@ -1,0 +1,15 @@
+{
+    "name": "Modifier: Redstone Pulse (Controllable)",
+    "icon": "technicalcores:modifier_redstone_pulse_controllable",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_redstone_pulse_controllable"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Modifier: Redstone Pulse (Controllable)$() represents a redstone pulse generator whose cycle is larger than 8 redstone ticks."
+      }
+    ]
+  }

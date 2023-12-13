@@ -1,0 +1,15 @@
+{
+    "name": "修饰: 红石脉冲",
+    "icon": "technicalcores:modifier_redstone_pulse",
+    "category": "technicalcores:2_modifier",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:modifier_redstone_pulse"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)修饰: 红石脉冲$()代表一个周期为4-8红石刻的脉冲发生器。"
+      }
+    ]
+  }

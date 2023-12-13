@@ -1,0 +1,15 @@
+{
+    "name": "核心: 无限蘑菇煲",
+    "icon": "technicalcores:core_infinite_mushroom_stew",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_infinite_mushroom_stew"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 无限蘑菇煲$()代表从哞菇身上无限获取蘑菇煲的过程。$(br2)使用相当于食用一个蘑菇煲。$(br2)无法放于自动收集器内。"
+      }
+    ]
+  }

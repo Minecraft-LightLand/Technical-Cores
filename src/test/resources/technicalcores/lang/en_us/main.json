@@ -38,5 +38,11 @@
     "tooltip": {
       "output_prop": "Probability: %.1f%%"
     }
+  },
+  "pachouli_books": {
+    "technicalcores": {
+      "name": "Thinking in technical minecraft",
+      "landing_text": "If you learn too much technical minecraft, you will lose your humanity. -By hsds"
+    }
   }
 }

@@ -1,0 +1,15 @@
+{
+    "name": "Core: Infinite Milk",
+    "icon": "technicalcores:core_infinite_milk",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_advanced",
+        "recipe": "technicalcores:core_infinite_milk"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)Core: Infinite Milk$() represents filling milk bucket from a cow infinitely. $(br2) Drink a bucket of milk instantly upon using. $(br2) Can not be put in automatic collector."
+      }
+    ]
+  }

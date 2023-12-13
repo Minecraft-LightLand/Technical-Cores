@@ -1,0 +1,15 @@
+{
+    "name": "核心: 无限水",
+    "icon": "technicalcores:core_infinite_water",
+    "category": "technicalcores:3_technical_cores",
+    "pages": [
+      {
+        "type": "technicalcores:space_crystal_basic",
+        "recipe": "technicalcores:core_infinite_water"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(l)核心: 无限水$()代表两格水相遇产生无限水的装置。$(br2)使用可放置一桶水。$(br2)不能放于自动收集器内。"
+      }
+    ]
+  }
