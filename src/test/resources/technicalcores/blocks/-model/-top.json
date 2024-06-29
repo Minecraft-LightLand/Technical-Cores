@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_top",
-    "textures": {
-		"top": "^m:block/^s_top",
-		"side": "^m:block/^s_side"
-    }
-}

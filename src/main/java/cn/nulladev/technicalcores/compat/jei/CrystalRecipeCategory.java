@@ -80,7 +80,7 @@ public class CrystalRecipeCategory implements IRecipeCategory<DefaultCrystalReci
             }
         }
         builder.addSlot(RecipeIngredientRole.OUTPUT, 132, size * 9 - 8)
-                .addItemStack(recipe.getResultItem());
+                .addItemStack(recipe.result);
     }
 }
 
