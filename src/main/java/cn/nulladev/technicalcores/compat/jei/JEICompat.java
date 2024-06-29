@@ -27,23 +27,23 @@ public class JEICompat implements IModPlugin {
 	public static final ResourceLocation UID = new ResourceLocation(TechnicalCores.MODID, "jei_plugin");
 	public static final CrystalRecipeCategory BASIC = new CrystalRecipeCategory(
 			new ResourceLocation(TechnicalCores.MODID, "crystal_basic"),
-			TCItems.SPACE_CRYSTAL_BASIC.get().getDefaultInstance(),
+			() -> TCItems.SPACE_CRYSTAL_BASIC.get().getDefaultInstance(),
 			new ResourceLocation(TechnicalCores.MODID, "textures/gui/container/crystal_3.png"),
 			"jei.title.crystal.basic", 3);
 	public static final CrystalRecipeCategory ADVANCED = new CrystalRecipeCategory(
 			new ResourceLocation(TechnicalCores.MODID, "crystal_advanced"),
-			TCItems.SPACE_CRYSTAL_ADVANCED.get().getDefaultInstance(),
+			() -> TCItems.SPACE_CRYSTAL_ADVANCED.get().getDefaultInstance(),
 			new ResourceLocation(TechnicalCores.MODID, "textures/gui/container/crystal_4.png"),
 			"jei.title.crystal.advanced", 4);
 	public static final CrystalRecipeCategory ULTIMATE = new CrystalRecipeCategory(
 			new ResourceLocation(TechnicalCores.MODID, "crystal_ultimate"),
-			TCItems.SPACE_CRYSTAL_ULTIMATE.get().getDefaultInstance(),
+			() -> TCItems.SPACE_CRYSTAL_ULTIMATE.get().getDefaultInstance(),
 			new ResourceLocation(TechnicalCores.MODID, "textures/gui/container/crystal_5.png"),
 			"jei.title.crystal.ultimate", 5);
 
 	public static final MachineOutputRecipeCategory MACHINE_OUTPUT = new MachineOutputRecipeCategory(
 			new ResourceLocation(TechnicalCores.MODID, "machine_output"),
-			new ItemStack(TCBlocks.AUTOMATIC_COLLECTOR.get()),
+			() -> new ItemStack(TCBlocks.AUTOMATIC_COLLECTOR.get()),
 			new ResourceLocation(TechnicalCores.MODID, "textures/gui/container/core_machine.png"),
 			"jei.title.collector"
 	);

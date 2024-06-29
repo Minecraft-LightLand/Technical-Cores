@@ -16,6 +16,10 @@ public class TCBlocks {
 	public static final RegistryEntry<AutomaticCollector> AUTOMATIC_COLLECTOR = TechnicalCores.REGISTRATE
 			.block("automatic_collector", p -> new AutomaticCollector(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)
 					.requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)))
+			.blockstate((ctx, pvd) -> pvd.simpleBlock(ctx.get(), pvd.models().cubeTop(ctx.getName(),
+					pvd.modLoc("block/" + ctx.getName() + "_side"),
+					pvd.modLoc("block/" + ctx.getName() + "_top")
+			)))
 			.simpleItem()
 			.tag(BlockTags.MINEABLE_WITH_PICKAXE)
 			.register();
