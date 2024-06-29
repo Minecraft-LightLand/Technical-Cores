@@ -1,5 +1,6 @@
 {
   "block.technicalcores.automatic_collector": "ɹoʇɔǝןןoƆ ɔıʇɐɯoʇnⱯ",
+  "container.collector": "ɹoʇɔǝןןoƆ ɔıʇɐɯoʇnⱯ",
   "item.technicalcores.core_amplifier": "ɹǝıɟıןdɯⱯ ǝɹoƆ",
   "item.technicalcores.core_azalea_tree_factory": "ʎɹoʇɔɐℲ ǝǝɹ⟘ ɐǝןɐzⱯ ǝɹoƆ",
   "item.technicalcores.core_bedrock_breaker": "ɹǝʞɐǝɹᗺ ʞɔoɹpǝᗺ ǝɹoƆ",
@@ -55,8 +56,21 @@
   "item.technicalcores.modifier_white_box": "xoᗺ ǝʇıɥM ɹǝıɟıpoW",
   "item.technicalcores.modifier_wither": "ɹǝɥʇıM ɹǝıɟıpoW",
   "item.technicalcores.space_crystal_advanced": "pǝɔuɐʌpⱯ ןɐʇsʎɹƆ ǝɔɐdS",
-  "item.technicalcores.space_crystal_basic": "ɔısɐᗺ ןɐʇsʎɹƆ ǝɔɐdS",
+  "item.technicalcores.space_crystal_basic": "ɔısɐᗺ :ןɐʇsʎɹƆ ǝɔɐdS",
   "item.technicalcores.space_crystal_ultimate": "ǝʇɐɯıʇן∩ ןɐʇsʎɹƆ ǝɔɐdS",
   "item.technicalcores.world_interaction_io": "oI uoıʇɔɐɹǝʇuI pןɹoM",
-  "item.technicalcores.world_interaction_wand": "puɐM uoıʇɔɐɹǝʇuI pןɹoM"
+  "item.technicalcores.world_interaction_wand": "puɐM uoıʇɔɐɹǝʇuI pןɹoM",
+  "itemGroup.technicalcores.technicalcores": "sǝɹoƆ ןɐɔıuɥɔǝ⟘",
+  "jei.title.collector": "ɹoʇɔǝןןoɔ ɔıʇɐɯoʇnⱯ",
+  "jei.title.crystal.advanced": "pǝɔuɐʌpⱯ 'ןɐʇsʎɹƆ ǝɔɐdS",
+  "jei.title.crystal.basic": "ɔısɐᗺ 'ןɐʇsʎɹƆ ǝɔɐdS",
+  "jei.title.crystal.ultimate": "ǝʇɐɯıʇן∩ 'ןɐʇsʎɹƆ ǝɔɐdS",
+  "jei.tooltip.output_prop": "%%ɟƖ˙% :ʎʇıןıqɐqoɹԀ",
+  "pachouli_books.technicalcores.landing_text": "spsɥ ʎᗺ- ˙ʎʇıuɐɯnɥ ɹnoʎ ǝsoן ןןıʍ noʎ 'ʇɟɐɹɔǝuıɯ ןɐɔıuɥɔǝʇ ʇnoqɐ ɥɔnɯ ooʇ uɹɐǝן noʎ ɟI",
+  "pachouli_books.technicalcores.name": "ʇɟɐɹɔǝuıɯ ןɐɔıuɥɔǝʇ uı buıʞuıɥ⟘",
+  "technicalcores.misc.cd1": "ǝןqɐןıɐʌɐ ʎןʇuǝɹɹnƆ",
+  "technicalcores.misc.cd2": "sʞɔıʇ%d uı ǝןqɐןıɐʌⱯ",
+  "technicalcores.misc.miss_content": "buıssıW ʇuǝʇuoƆ",
+  "technicalcores.misc.miss_core": "buıssıW ǝɹoƆ ʇdǝɔuoƆ",
+  "technicalcores.misc.total_cd": "sʞɔıʇ%d 'ᗡƆ"
 }

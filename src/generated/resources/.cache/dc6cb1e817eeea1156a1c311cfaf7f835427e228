@@ -1,7 +1,7 @@
-// 1.20.1	2024-06-29T22:47:53.940635	Registrate Provider for technicalcores [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider, Tags (enchantments), Tags (mob_effects)]
+// 1.20.1	2024-06-29T23:00:49.136442	Registrate Provider for technicalcores [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider, Tags (enchantments), Tags (mob_effects)]
 bab667bb50535cfe4dc123c091a180de615dc6d2 assets/technicalcores/blockstates/automatic_collector.json
-f542cbbff65e836d3a71df0bac84f9daf4b21010 assets/technicalcores/lang/en_ud.json
-488767c6f520b0c92a03d23adddf5333b0424f6d assets/technicalcores/lang/en_us.json
+c90e8ba94724230eef66fd0c6e474e31b9efc7be assets/technicalcores/lang/en_ud.json
+4f8b49e1abf662a3bc2b893ac641a840fe24915e assets/technicalcores/lang/en_us.json
 8f60bb9d423bbe29b0cd674eb422b00770f53580 assets/technicalcores/models/block/automatic_collector.json
 5c36a8b45132483a93f2aed7d5246e78c70ac248 assets/technicalcores/models/item/automatic_collector.json
 f43f40968e3098cbffd2c0d7c01ca9c773754176 assets/technicalcores/models/item/core_amplifier.json

@@ -1,5 +1,6 @@
 {
   "block.technicalcores.automatic_collector": "Automatic Collector",
+  "container.collector": "Automatic Collector",
   "item.technicalcores.core_amplifier": "Core Amplifier",
   "item.technicalcores.core_azalea_tree_factory": "Core Azalea Tree Factory",
   "item.technicalcores.core_bedrock_breaker": "Core Bedrock Breaker",
@@ -55,8 +56,21 @@
   "item.technicalcores.modifier_white_box": "Modifier White Box",
   "item.technicalcores.modifier_wither": "Modifier Wither",
   "item.technicalcores.space_crystal_advanced": "Space Crystal Advanced",
-  "item.technicalcores.space_crystal_basic": "Space Crystal Basic",
+  "item.technicalcores.space_crystal_basic": "Space Crystal: Basic",
   "item.technicalcores.space_crystal_ultimate": "Space Crystal Ultimate",
   "item.technicalcores.world_interaction_io": "World Interaction Io",
-  "item.technicalcores.world_interaction_wand": "World Interaction Wand"
+  "item.technicalcores.world_interaction_wand": "World Interaction Wand",
+  "itemGroup.technicalcores.technicalcores": "Technical Cores",
+  "jei.title.collector": "Automatic collector",
+  "jei.title.crystal.advanced": "Space Crystal, Advanced",
+  "jei.title.crystal.basic": "Space Crystal, Basic",
+  "jei.title.crystal.ultimate": "Space Crystal, Ultimate",
+  "jei.tooltip.output_prop": "Probability: %.1f%%",
+  "pachouli_books.technicalcores.landing_text": "If you learn too much about technical minecraft, you will lose your humanity. -By hsds",
+  "pachouli_books.technicalcores.name": "Thinking in technical minecraft",
+  "technicalcores.misc.cd1": "Currently available",
+  "technicalcores.misc.cd2": "Available in %dticks",
+  "technicalcores.misc.miss_content": "Content Missing",
+  "technicalcores.misc.miss_core": "Concept Core Missing",
+  "technicalcores.misc.total_cd": "CD, %dticks"
 }
