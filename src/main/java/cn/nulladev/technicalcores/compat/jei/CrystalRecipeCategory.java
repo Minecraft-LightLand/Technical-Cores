@@ -17,18 +17,19 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Supplier;
 
 public class CrystalRecipeCategory implements IRecipeCategory<DefaultCrystalRecipe> {
 
     private final ResourceLocation bg;
     private final ResourceLocation uid;
-    private final ItemStack stack;
+    private final Supplier<ItemStack> stack;
     private final String translation;
     private final int size;
 
     private IDrawable background, icon;
 
-    public CrystalRecipeCategory(ResourceLocation uid, ItemStack stack, ResourceLocation bg, String translation, int size) {
+    public CrystalRecipeCategory(ResourceLocation uid, Supplier<ItemStack> stack, ResourceLocation bg, String translation, int size) {
         this.uid = uid;
         this.bg = bg;
         this.stack = stack;
@@ -40,7 +41,7 @@ public class CrystalRecipeCategory implements IRecipeCategory<DefaultCrystalReci
         background = guiHelper.drawableBuilder(bg, 7, 16, 162, 18 * size)
                 .addPadding(0, 0, 0, 0)
                 .build();
-        icon = guiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, stack);
+        icon = guiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, stack.get());
         return this;
     }
 
@@ -80,7 +81,7 @@ public class CrystalRecipeCategory implements IRecipeCategory<DefaultCrystalReci
             }
         }
         builder.addSlot(RecipeIngredientRole.OUTPUT, 132, size * 9 - 8)
-                .addItemStack(recipe.getResultItem());
+                .addItemStack(recipe.result);
     }
 }
 

@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "technicalcores:item/core_carpet_rail_duplicator"
-    }
-}
-

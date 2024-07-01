@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_top",
-    "textures": {
-		"top": "technicalcores:block/automatic_collector_top",
-		"side": "technicalcores:block/automatic_collector_side"
-    }
-}
-

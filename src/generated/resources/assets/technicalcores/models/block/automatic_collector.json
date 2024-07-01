@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "technicalcores:block/automatic_collector_side",
+    "top": "technicalcores:block/automatic_collector_top"
+  }
+}

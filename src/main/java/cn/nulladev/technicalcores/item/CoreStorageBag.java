@@ -1,6 +1,7 @@
 package cn.nulladev.technicalcores.item;
 
 import cn.nulladev.technicalcores.client.CoreBagMenu;
+import cn.nulladev.technicalcores.core.TCBlocks;
 import cn.nulladev.technicalcores.item.technicalcore.BaseCore;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -42,7 +43,8 @@ public class CoreStorageBag extends Item {
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         if (!world.isClientSide) {
             ItemStack stack = player.getItemInHand(hand);
-            MenuProvider menu = new SimpleMenuProvider((windowId, playerInventory, playerEntity) -> new CoreBagMenu(windowId, playerInventory, stack), stack.getDisplayName());
+            MenuProvider menu = new SimpleMenuProvider((windowId, playerInventory, playerEntity) ->
+                    new CoreBagMenu(TCBlocks.MT_CORE_BAG.get(), windowId, playerInventory, stack), stack.getDisplayName());
             NetworkHooks.openScreen((ServerPlayer) player, menu, buf -> buf.writeBoolean(hand == InteractionHand.MAIN_HAND));
             //player.openMenu(container);
         }
