@@ -19,7 +19,7 @@ modId="technicalcores" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
-version="2.0.0" #mandatory
+version="2.0.1" #mandatory
  # A display name for the mod
 displayName="Technical Cores" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
@@ -64,7 +64,12 @@ Thus, this mod was born.
 [[dependencies.technicalcores]]
     modId="minecraft"
     mandatory=true
-# This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="[1.20.1,1.20.2)"
     ordering="NONE"
+    side="BOTH"
+[[dependencies.technicalcores]]
+    modId="l2library"
+    mandatory=true
+    versionRange="[2.4.25,)"
+    ordering="AFTER"
     side="BOTH"

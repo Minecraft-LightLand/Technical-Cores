@@ -42,7 +42,7 @@ public class TCItems {
 	public static ItemEntry<GenericTCItem> MODIFIER_WHITE_BOX = register("modifier_white_box", GenericTCItem::new).lang("Modifier: White box").register();
 	public static ItemEntry<GenericTCItem> MODIFIER_WITHER = register("modifier_wither", GenericTCItem::new).lang("Modifier: Wither").register();
 
-	public static ItemEntry<SimplePlacementCore> CORE_AZALEA_TREE_FACTORY = register("core_azalea_tree_factory", p -> new SimplePlacementCore(p, 20, Blocks.OAK_WOOD)).lang("Core: Azalea tree factory").register();
+	public static ItemEntry<SimplePlacementCore> CORE_AZALEA_TREE_FACTORY = register("core_azalea_tree_factory", p -> new SimplePlacementCore(p, 20, Blocks.OAK_LOG)).lang("Core: Azalea tree factory").register();
 	public static ItemEntry<SimplePlacementCore> CORE_CACTUS_FARM = register("core_cactus_farm", p -> new SimplePlacementCore(p, 800, Blocks.CACTUS)).lang("Core: Cactus farm").register();
 	public static ItemEntry<SimplePlacementCore> CORE_COBBLESTONE_GENERATOR = register("core_cobblestone_generator", p -> new SimplePlacementCore(p, 30, Blocks.COBBLESTONE)).lang("Core: Cobblestone generator").register();
 	public static ItemEntry<SimplePlacementCore> CORE_COBBLESTONE_GENERATOR_AUTOMATED = register("core_cobblestone_generator_automated", p -> new SimplePlacementCore(p, 8, Blocks.COBBLESTONE)).lang("Core: Cobblestone generator (automated)").register();
