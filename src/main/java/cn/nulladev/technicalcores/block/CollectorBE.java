@@ -21,6 +21,9 @@ import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.items.wrapper.SidedInvWrapper;
 
 import javax.annotation.Nullable;
 import java.util.stream.IntStream;
@@ -139,6 +142,34 @@ public class CollectorBE extends BaseContainerBlockEntity implements WorldlyCont
 			container.fromTag(tag.getList(TAG_ITEMS, 10));
 		}
 
+	}
+
+	LazyOptional<?> handlerDown = LazyOptional.of(() -> new SidedInvWrapper(this, Direction.DOWN));
+	LazyOptional<?> handlerUp = LazyOptional.of(() -> new SidedInvWrapper(this, Direction.UP));
+
+	@Override
+	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
+		if (!this.remove && facing != null && capability == net.minecraftforge.common.capabilities.ForgeCapabilities.ITEM_HANDLER) {
+			if (facing == Direction.DOWN)
+				return handlerDown.cast();
+			else
+				return handlerUp.cast();
+		}
+		return super.getCapability(capability, facing);
+	}
+
+	@Override
+	public void invalidateCaps() {
+		super.invalidateCaps();
+		handlerDown.invalidate();
+		handlerUp.invalidate();
+	}
+
+	@Override
+	public void reviveCaps() {
+		super.reviveCaps();
+		this.handlerDown = LazyOptional.of(() -> new SidedInvWrapper(this, Direction.DOWN));
+		this.handlerUp = LazyOptional.of(() -> new SidedInvWrapper(this, Direction.UP));
 	}
 
 	@Override
