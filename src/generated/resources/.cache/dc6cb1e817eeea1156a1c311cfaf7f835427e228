@@ -1,7 +1,7 @@
-// 1.20.1	2024-06-29T23:00:49.136442	Registrate Provider for technicalcores [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider, Tags (enchantments), Tags (mob_effects)]
+// 1.20.1	2024-07-02T22:11:41.9827554	Registrate Provider for technicalcores [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider, Tags (enchantments), Tags (mob_effects)]
 bab667bb50535cfe4dc123c091a180de615dc6d2 assets/technicalcores/blockstates/automatic_collector.json
-c90e8ba94724230eef66fd0c6e474e31b9efc7be assets/technicalcores/lang/en_ud.json
-4f8b49e1abf662a3bc2b893ac641a840fe24915e assets/technicalcores/lang/en_us.json
+32414d5c409f2f02972d62750aad963b1153ffd5 assets/technicalcores/lang/en_ud.json
+f08dc989a282dd21dd06f9c2358c78419e2f705b assets/technicalcores/lang/en_us.json
 8f60bb9d423bbe29b0cd674eb422b00770f53580 assets/technicalcores/models/block/automatic_collector.json
 5c36a8b45132483a93f2aed7d5246e78c70ac248 assets/technicalcores/models/item/automatic_collector.json
 f43f40968e3098cbffd2c0d7c01ca9c773754176 assets/technicalcores/models/item/core_amplifier.json
@@ -15,8 +15,8 @@ f7c3b860cb9f848990d4aa593b84c65674dfd42a assets/technicalcores/models/item/core_
 ec611520d823a57018ebc5df54cb478bdb3ecbf0 assets/technicalcores/models/item/core_cobblestone_generator_automated.json
 d884f05d7b3ee4ef000528d161093ab4e541a313 assets/technicalcores/models/item/core_cooked_chicken_farm.json
 0c59e28d35f2314e715663a00961116e2290258d assets/technicalcores/models/item/core_drain.json
-96f5f2946312003fdac59b54dcfb7a2df43c4e2c assets/technicalcores/models/item/core_end_frame_breaker.json
 c90d04868cdc930f28e38e3f26e2b45435bc95fd assets/technicalcores/models/item/core_enderman_farm.json
+96f5f2946312003fdac59b54dcfb7a2df43c4e2c assets/technicalcores/models/item/core_end_frame_breaker.json
 b42515690dace4f7b0edc6df0d9b3e2f746f5c8e assets/technicalcores/models/item/core_ghast_farm.json
 9811cf20c8e7e7cbc86f7a509cd08e2e6055899e assets/technicalcores/models/item/core_glow_berries_farm.json
 706e07f399592635c772cc8e9c16b44c499f7e40 assets/technicalcores/models/item/core_guardian_farm.json
@@ -45,8 +45,8 @@ f20490dbd4f69149042eb0cc6e229e7ad405fc3f assets/technicalcores/models/item/core_
 f561752958a320affee80c7a69c59e04f2c8a216 assets/technicalcores/models/item/core_zombified_piglin_farm.json
 76354cbda21e4bd259dc2b3b8abc97c11d5164d0 assets/technicalcores/models/item/infinite_fuel.json
 3a08b57cdeca99adc608f9eb173deb1bac5d0d9b assets/technicalcores/models/item/modifier_dark_box.json
-4a00d5b69ec0532e14da9290ec378ee56c44daa2 assets/technicalcores/models/item/modifier_end_update.json
 603904a45b818dc07dacca85907968a9e76737cc assets/technicalcores/models/item/modifier_endermite.json
+4a00d5b69ec0532e14da9290ec378ee56c44daa2 assets/technicalcores/models/item/modifier_end_update.json
 1e1099a7f638d921a2f359a7f108769e3c6b2b1e assets/technicalcores/models/item/modifier_falling.json
 b0d2dc144724bebc19c18f6cadd86bbcc18d568e assets/technicalcores/models/item/modifier_iron_golem.json
 dfe59fd4f8ed2250132c557ed1a28a102a92330e assets/technicalcores/models/item/modifier_nether_portal.json
